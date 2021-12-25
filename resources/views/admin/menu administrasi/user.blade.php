@@ -131,12 +131,12 @@
                                                     <i class="anticon anticon-edit"></i>
                                                 </button> 
                                             </a>
-                                            <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#user">
+                                            <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_user_sg">
                                                 <button class="btn btn-icon btn-danger btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Delete">
                                                     <i class="anticon anticon-delete"></i>
                                                 </button>
                                                 <!-- Modal Delete -->
-                                                <div class="modal fade" id="user">
+                                                <div class="modal fade" id="delete_user_sg">
                                                     <div class="modal-dialog modal-dialog-centered">
                                                         <div class="modal-content">
                                                             <div class="modal-body">
@@ -171,12 +171,12 @@
                                                     <i class="anticon anticon-edit"></i>
                                                 </button> 
                                             </a>
-                                            <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_user_sg">
+                                            <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_user_sg2">
                                                 <button class="btn btn-icon btn-danger btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Delete">
                                                     <i class="anticon anticon-delete"></i>
                                                 </button>
                                                 <!-- Modal Delete -->
-                                                <div class="modal fade" id="delete_user_sg">
+                                                <div class="modal fade" id="delete_user_sg2">
                                                     <div class="modal-dialog modal-dialog-centered">
                                                         <div class="modal-content">
                                                             <div class="modal-body">
@@ -210,7 +210,7 @@
                         <h4 class="m-b-0">Daftar User Sergio</h4>
                     </div>
                     <div class="col-lg-12" style="overflow:auto">
-                        <table id="data-table2" class="table" style="width:100%">
+                        <table id="data-table" class="table" style="width:100%">
                             <thead>
                                 <tr>
                                     <th scope="col"><strong>Periode</strong></th>
@@ -223,7 +223,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>21.1 - Sumbang Gagasan 2021-2022</td>
+                                    <td>21.1 - Sergio 2021-2022</td>
                                     <td>T525317</td>
                                     <td>ADITIYA CAHYA WARDANA, S.T., M.M.</td>
                                     <td>FASILITATOR_SG</td>
@@ -235,18 +235,18 @@
                                                     <i class="anticon anticon-edit"></i>
                                                 </button> 
                                             </a>
-                                            <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_user_sg">
+                                            <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_user_srg">
                                                 <button class="btn btn-icon btn-danger btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Delete">
                                                     <i class="anticon anticon-delete"></i>
                                                 </button>
                                                 <!-- Modal Delete -->
-                                                <div class="modal fade" id="delete_user_sg">
+                                                <div class="modal fade" id="delete_user_srg">
                                                     <div class="modal-dialog modal-dialog-centered">
                                                         <div class="modal-content">
                                                             <div class="modal-body">
                                                                 <div class="text-center font-size-150">
                                                                     <i class="anticon anticon-warning text-warning"></i>
-                                                                    <p class="text-dark font-size-16 m-b-40">Apakah anda yakin menghapus User Sumbang Gagasan?</p>
+                                                                    <p class="text-dark font-size-16 m-b-40">Apakah anda yakin menghapus User Sergio?</p>
                                                                 </div>
                                                                 <div class="text-center">
                                                                     <a type="button" class="btn btn-default" data-dismiss="modal">Batal</a>
@@ -263,7 +263,7 @@
                                 </tr>
 
                                 <tr>
-                                    <td>21.1 - Sumbang Gagasan 2021-2022</td>
+                                    <td>21.1 - Sergio 2021-2022</td>
                                     <td>T525317</td>
                                     <td>ADITIYA CAHYA WARDANA, S.T., M.M.</td>
                                     <td>FASILITATOR_SG</td>
@@ -275,18 +275,18 @@
                                                     <i class="anticon anticon-edit"></i>
                                                 </button> 
                                             </a>
-                                            <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_user_sg">
+                                            <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_user_srg2">
                                                 <button class="btn btn-icon btn-danger btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Delete">
                                                     <i class="anticon anticon-delete"></i>
                                                 </button>
                                                 <!-- Modal Delete -->
-                                                <div class="modal fade" id="delete_user_sg">
+                                                <div class="modal fade" id="delete_user_srg2">
                                                     <div class="modal-dialog modal-dialog-centered">
                                                         <div class="modal-content">
                                                             <div class="modal-body">
                                                                 <div class="text-center font-size-150">
                                                                     <i class="anticon anticon-warning text-warning"></i>
-                                                                    <p class="text-dark font-size-16 m-b-40">Apakah anda yakin menghapus User Sumbang Gagasan?</p>
+                                                                    <p class="text-dark font-size-16 m-b-40">Apakah anda yakin menghapus User Sergio?</p>
                                                                 </div>
                                                                 <div class="text-center">
                                                                     <a type="button" class="btn btn-default" data-dismiss="modal">Batal</a>

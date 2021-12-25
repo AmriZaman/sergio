@@ -93,12 +93,12 @@
                     </thead>
                     <tbody>
                         <tr class="">
-                            <td>002/SS/Komp Umum/Dep Corporate Social Responsibili</td>
-                            <td>Komp Umum - Dep Corporate Social Responsibility</td>
-                            <td>21-09-2021</td>
-                            <td>SS COLEK 2.</td>
+                            <td>005/SS/Komp Teknik/Dep Perencanaan & Penerimaan Ba</td>
+                            <td>Bag Perencanaan Barang</td>
+                            <td>25-11-2021</td>
+                            <td>SS R-EMYE</td>
                             <td class="text-center">SS</td>
-                            <td>Menihilkan temuan auditor internal terkait belum ada SOP Penagihan Mitra Binaan selama 3 bulan melalui penyusunan PG-IK-69-0031</td>
+                            <td>Mengurangi kesalahan saat pembuatan PR oleh personil non organik menjadi dibawah 58 kesalahan dengan menambahkan fasilitas monitoring tiap tahapan di spreadsheet jobdesk Canbar mekanik</td>
                             <td>
                                 <a class="m-b-10" data-toggle="modal" data-target=".status-modal">
                                     <button class="badge badge-pill badge-green font-size-13">
@@ -142,7 +142,7 @@
                             <td class="text-center"><i class="fas fa-check text-success"></i></td>
                             <td class="text-center"><i class="fas fa-check text-success"></i></td>
                             <td class="text-center"><i class="fas fa-check text-success"></i></td>
-                            <td class="text-center"><i class="fas fa-minus text-danger"></i></td>
+                            <td class="text-center"><i class="fas fa-check text-success"></i></td>
                             <td class="text-center"><i class="fas fa-check text-success"></i></td>
                             <td class="text-center"><i class="fas fa-check text-success"></i></td>
                             <td class="text-center"><i class="fas fa-check text-success"></i></td>

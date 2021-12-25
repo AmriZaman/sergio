@@ -57,7 +57,7 @@
                     </div>
                 </div>
                 <div class="d-none d-md-flex p-h-40 justify-content-between">
-                    <span class="">© Departemen Inovasi & Sistem Manajemen</span>
+                    <span class="">© Departemen Inovasi & Sistem Manajemen <a href="/beranda">Beranda</a></span>
                 </div>
             </div>
         </div>
