@@ -14,7 +14,7 @@ class CreateAuthJenisTable extends Migration
     public function up()
     {
         Schema::create('auth_jenis', function (Blueprint $table) {
-            $table-> string('id', 50)-> primary();
+            $table-> string('kode', 50)-> primary();
             $table-> string('jenis', 50);
             $table-> string('app_name', 50);
             $table->timestamps();

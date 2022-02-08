@@ -22,6 +22,7 @@
             <div class="d-flex align-items-center justify-content-between">
                 <h4 class="card-title">Detail Informasi Gugus</h4>
                 <div class="card-toolbar">
+                    <a href="/detail-gagasan-departemen" class="btn btn-warning btn-tone m-r-5"><i class="fas fa-eye"></i>  Detail Gagasan</a>
                     <button class="btn btn-success btn-tone m-r-5"><i class="fas fa-download"></i>  Download</button>
                 </div>
             </div>

@@ -58,6 +58,24 @@
                                 </select>
                                 <div class="row m-t-15">
                                     <div class="col-lg-10">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="customFile">
+                                            <label class="custom-file-label" for="customFile">Upload Excell</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="row">
+                                            <div class=" col-lg-6">
+                                                <button class="btn btn-warning btn-tone" style="width: 100%" data-toggle="tooltip" data-placement="bottom" title="Download Template"><i class="fas fa-download"></i></button>
+                                            </div>
+                                            <div class=" col-lg-6">
+                                                <button class="btn btn-success btn-tone" style="width: 100%" data-toggle="tooltip" data-placement="bottom" title="Upload Excell"><i class="fas fa-upload"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row m-t-15">
+                                    <div class="col-lg-10">
                                         <div class="row">
                                             <div class="m-b-15 col-md-6">
                                                 <select class="select2" name="state">
@@ -126,11 +144,6 @@
                                     <td>Dep Administrasi & Penjualan</td>
                                     <td>
                                         <div class="row">
-                                            <a class="m-b-10 m-l-10" href="/edit-user-sg">
-                                                <button class="btn btn-icon btn-warning btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Edit">
-                                                    <i class="anticon anticon-edit"></i>
-                                                </button> 
-                                            </a>
                                             <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_user_sg">
                                                 <button class="btn btn-icon btn-danger btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Delete">
                                                     <i class="anticon anticon-delete"></i>
@@ -166,11 +179,6 @@
                                     <td>Dep Administrasi & Penjualan</td>
                                     <td>
                                         <div class="row">
-                                            <a class="m-b-10 m-l-10" href="/edit-user-sg">
-                                                <button class="btn btn-icon btn-warning btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Edit">
-                                                    <i class="anticon anticon-edit"></i>
-                                                </button> 
-                                            </a>
                                             <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_user_sg2">
                                                 <button class="btn btn-icon btn-danger btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Delete">
                                                     <i class="anticon anticon-delete"></i>
@@ -210,7 +218,7 @@
                         <h4 class="m-b-0">Daftar User Sergio</h4>
                     </div>
                     <div class="col-lg-12" style="overflow:auto">
-                        <table id="data-table" class="table" style="width:100%">
+                        <table id="data-table2" class="table" style="width:100%">
                             <thead>
                                 <tr>
                                     <th scope="col"><strong>Periode</strong></th>
@@ -230,11 +238,6 @@
                                     <td>Dep Administrasi & Penjualan</td>
                                     <td>
                                         <div class="row">
-                                            <a class="m-b-10 m-l-10" href="/edit-user-sg">
-                                                <button class="btn btn-icon btn-warning btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Edit">
-                                                    <i class="anticon anticon-edit"></i>
-                                                </button> 
-                                            </a>
                                             <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_user_srg">
                                                 <button class="btn btn-icon btn-danger btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Delete">
                                                     <i class="anticon anticon-delete"></i>
@@ -270,11 +273,6 @@
                                     <td>Dep Administrasi & Penjualan</td>
                                     <td>
                                         <div class="row">
-                                            <a class="m-b-10 m-l-10" href="/edit-user-sg">
-                                                <button class="btn btn-icon btn-warning btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Edit">
-                                                    <i class="anticon anticon-edit"></i>
-                                                </button> 
-                                            </a>
                                             <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_user_srg2">
                                                 <button class="btn btn-icon btn-danger btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Delete">
                                                     <i class="anticon anticon-delete"></i>

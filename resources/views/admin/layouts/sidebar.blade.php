@@ -15,8 +15,8 @@
                     <li class="{{ ($title === "Beranda") ? 'active' : '' }}">
                         <a href="/beranda">Beranda</a>
                     </li>
-                    <li class="{{ (($title === "Berita") or ($title === "Tambah Berita") or ($title === "Detail Berita") or ($title === "Edit Berita")) ? 'active' : '' }}">
-                        <a href="/berita">Berita</a>
+                    <li class="{{ (($title === "Hall of Fame") or ($title === "Tambah Hall of Fame") or ($title === "Detail Hall of Fame") or ($title === "Edit Hall of Fame")) ? 'active' : '' }}">
+                        <a href="/hall-of-fame">Hall of Fame</a>
                     </li>
                     <li class="{{ (($title === "Panduan Inovasi") or ($title === "Tambah Panduan") or ($title === "Edit Panduan")) ? 'active' : '' }}">
                         <a href="/panduan-inovasi">Panduan Inovasi</a>
@@ -49,9 +49,9 @@
                     <li class="{{ ($title === "Pegawai") ? 'active' : '' }}">
                         <a href="/pegawai">Daftar Pegawai</a>
                     </li>
-                    <li class="{{ ($title === "NIK") ? 'active' : '' }}">
+                    {{-- <li class="{{ ($title === "NIK") ? 'active' : '' }}">
                         <a href="/nik">Migrasi NIK</a>
-                    </li>
+                    </li> --}}
                 </ul>
             </li>
             <li class="nav-item dropdown">
@@ -71,6 +71,9 @@
                     <li class="{{ (($title === "Approval Sergio") or ($title === "Detail Approval Sergio")) ? 'active' : '' }}">
                         <a href="/approval-sergio">Approval Sergio</a>
                     </li>
+                    {{-- <li class="{{ (($title === "Monitoring Gugus Inovasi") or ($title === "Monitoring Gugus Inovasi")) ? 'active' : '' }}">
+                        <a href="/monitoring-gugus-inovasi">Monitoring Gugus Inovasi</a>
+                    </li> --}}
                 </ul>
             </li>
             <li class="nav-item dropdown">
@@ -87,6 +90,9 @@
                     <li class="{{ (($title === "Approval Gagasan") or ($title === "Detail Approval Gagasan")) ? 'active' : '' }}">
                         <a href="/approval-gagasan">Approval Usulan Gagasan</a>
                     </li>
+                    <li class="{{ (($title === "Approval Plan Action Inovasi") or ($title === "Detail Approval Plan Action Inovasi")) ? 'active' : '' }}">
+                        <a href="/approval-plan-action">Approval Plan Action Inovasi</a>
+                    </li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
@@ -101,7 +107,31 @@
                 </a>
                 <ul class="dropdown-menu">
                     <li class="{{ (($title === "Verifikasi Gagasan") or ($title === "Detail Verifikasi Gagasan")) ? 'active' : '' }}">
-                        <a href="verifikasi-manager">Verifikasi Usulan Gagasan</a>
+                        <a href="/verifikasi-manager">Verifikasi Usulan Gagasan</a>
+                    </li>
+                    <li class="{{ (($title === "Verifikasi Plan Action Inovasi") or ($title === "Detail Verifikasi Plan Action Inovasi")) ? 'active' : '' }}">
+                        <a href="/verifikasi-plan-action">Verifikasi Plan Action Inovasi</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="javascript:void(0);">
+                    <span class="icon-holder">
+                        <i class="fas fa-user-tie"></i>
+                    </span>
+                    <span class="title">Menu SPTK</span>
+                    <span class="arrow">
+                        <i class="arrow-icon"></i>
+                    </span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li class="{{ (($title === "Monitoring Gugus Inovasi Kompartemen") or ($title === "Detail Pengajuan Anggaran KIK") or ($title === "Tambah Pengajuan Anggaran KIK")) ? 'active' : '' }}">
+                        <a href="monitoring-gugus">Monitoring Gugus Inovasi</a>
+                    </li>
+                </ul>
+                <ul class="dropdown-menu">
+                    <li class="{{ (($title === "Rekap Nilai Gugus Kompartemen")) ? 'active' : '' }}">
+                        <a href="rekap-nilai-gugus">Rekap Nilai Gugus</a>
                     </li>
                 </ul>
             </li>
@@ -132,6 +162,9 @@
                     </span>
                 </a>
                 <ul class="dropdown-menu">
+                    <li class="{{ (($title === "Roadmap Inovasi")) ? 'active' : '' }}">
+                        <a href="/roadmap-inovasi">Roadmap Inovasi</a>
+                    </li>
                     <li class="{{ (($title === "Rekap Sumbang Gagasan") or ($title === "Detail Sumbang Gagasan") or ($title === "Daftarkan Sumbang Gagasan")) ? 'active' : '' }}">
                         <a href="/sumbang-gagasan">Sumbang Gagasan</a>
                     </li>
@@ -199,6 +232,96 @@
                     </li>
                     <li class="{{ ($title === "Memo SPTK") ? 'active' : '' }}">
                         <a href="/laporan-sptk">Memo Laporan SPTK</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="javascript:void(0);">
+                    <span class="icon-holder">
+                        <i class="fas fa-user-graduate"></i>
+                    </span>
+                    <span class="title">Menu Penjurian</span>
+                    <span class="arrow">
+                        <i class="arrow-icon"></i>
+                    </span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li class="{{ (($title === "Inisiasi Penilaian") or ($title === "Inisiasi Penilaian")) ? 'active' : '' }}">
+                        <a href="/inisiasi-penilaian">Inisiasi Penilaian</a>
+                    </li>
+                    {{-- <li class="{{ (($title === "Inisiasi Quota") or ($title === "Inisiasi Quota")) ? 'active' : '' }}">
+                        <a href="/inisiasi-quota">Inisiasi Quota</a>
+                    </li> --}}
+                    <li class="{{ (($title === "Pilih Koordinator Perusahaan") or ($title === "Pilih Koordinator Perusahaan")) ? 'active' : '' }}">
+                        <a href="/pilih-koordinator-perusahaan">Koordinator Juri</a>
+                    </li>
+                    <li class="{{ (($title === "Pilih Juri Kompartemen") or ($title === "Pilih Juri Kompartemen")) ? 'active' : '' }}">
+                        <a href="/pilih-juri-kompartemen">Pilih Juri Kompartemen</a>
+                    </li>
+                    <li class="{{ (($title === "Pilih Juri Perusahaan") or ($title === "Pilih Juri Perusahaan")) ? 'active' : '' }}">
+                        <a href="/pilih-juri-perusahaan">Pilih Juri Perusahaan</a>
+                    </li>
+                    <li class="{{ (($title === "Kelompok Juri Kompartemen") or ($title === "Kelompok Juri Kompartemen")) ? 'active' : '' }}">
+                        <a href="/kelompok-juri-kompartemen">Kelompok Juri Kompartemen</a>
+                    </li>
+                    <li class="{{ (($title === "Kelompok Juri Perusahaan") or ($title === "Kelompok Juri Perusahaan")) ? 'active' : '' }}">
+                        <a href="/kelompok-juri-perusahaan">Kelompok Juri Perusahaan</a>
+                    </li>
+                    <li class="{{ (($title === "Pembagian Gugus Tk Kompartemen") or ($title === "Pembagian Gugus Tk Kompartemen")) ? 'active' : '' }}">
+                        <a href="/pembagian-gugus-tk-kompartemen">Pembagian Gugus Tk Kompartemen</a>
+                    </li>
+                    <li class="{{ (($title === "Pembagian Gugus Tk Perusahaan") or ($title === "Pembagian Gugus Tk Perusahaan")) ? 'active' : '' }}">
+                        <a href="/pembagian-gugus-tk-perusahaan">Pembagian Gugus Tk Perusahaan</a>
+                    </li>
+                    <li class="{{ (($title === "Publish Nilai") or ($title === "Publish Nilai")) ? 'active' : '' }}">
+                        <a href="/publish-nilai">Publish Nilai</a>
+                    </li>
+                    <li class="{{ (($title === "Integrasi Nilai KIPG") or ($title === "Integrasi Nilai KIPG")) ? 'active' : '' }}">
+                        <a href="/integrasi-nilai-kipg">Integrasi Nilai KIPG</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="javascript:void(0);">
+                    <span class="icon-holder">
+                        <i class="fas fa-user-graduate"></i>
+                    </span>
+                    <span class="title">Menu Juri</span>
+                    <span class="arrow">
+                        <i class="arrow-icon"></i>
+                    </span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li class="{{ (($title === "Nilai Gugus") or ($title === "Input Nilai Gugus")) ? 'active' : '' }}">
+                        <a href="/nilai-gugus">Nilai Gugus</a>
+                    </li>
+                    <li class="{{ (($title === "Rekap Nilai Gugus")) ? 'active' : '' }}">
+                        <a href="/rekap-nilai">Rekap Nilai Gugus</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="javascript:void(0);">
+                    <span class="icon-holder">
+                        <i class="fas fa-trophy"></i>
+                    </span>
+                    <span class="title">Menu Konvensi</span>
+                    <span class="arrow">
+                        <i class="arrow-icon"></i>
+                    </span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li class="{{ (($title === "Inisiasi Konvensi") or ($title === "Edit Inisiasi Konvensi")) ? 'active' : '' }}">
+                        <a href="/inisiasi-konvensi">Inisiasi Konvensi</a>
+                    </li>
+                    <li class="{{ (($title === "Konvensi Nasional") or ($title === "Edit Gugus Konvensi Nasional") or ($title === "Detail Gugus Konvensi Nasional")) ? 'active' : '' }}">
+                        <a href="/konvensi-nasional">Konvensi Nasional</a>
+                    </li>
+                    <li class="{{ (($title === "Konvensi Internasional") or ($title === "Edit Gugus Konvensi Internasional") or ($title === "Detail Gugus Konvensi Internasional")) ? 'active' : '' }}">
+                        <a href="/konvensi-internasional">Konvensi Internasional</a>
+                    </li>
+                    <li class="{{ (($title === "Rekap Konvensi") or ($title === "Detail Rekap Konvensi")) ? 'active' : '' }}">
+                        <a href="/rekap-konvensi">Rekap Konvensi</a>
                     </li>
                 </ul>
             </li>

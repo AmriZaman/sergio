@@ -71,7 +71,6 @@
                             <th><strong>Makalah Final</strong></th>
                             <th><strong>IK</strong></th>
                             <th><strong>Penghematan</strong></th>
-                            <th><strong>Aksi</strong></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -79,7 +78,7 @@
                             <td>002/SS/Komp Umum/Dep Corporate Social Responsibili</td>
                             <td>Komp Umum - Dep Corporate Social Responsibility</td>
                             <td>21-09-2021</td>
-                            <td>GIM COLEK 2.</td>
+                            <td>5R COLEK 2.</td>
                             <td>Menihilkan temuan auditor internal terkait belum ada SOP Penagihan Mitra Binaan selama 3 bulan melalui penyusunan PG-IK-69-0031</td>
                             <td>
                                 <a class="m-b-10" data-toggle="modal" data-target=".status-modal">
@@ -96,49 +95,12 @@
                             <td class="text-center"><i class="fas fa-check text-success"></i></td>
                             <td class="text-center"><i class="fas fa-check text-success"></i></td>
                             <td class="text-center"><i class="fas fa-check text-success"></i></td>
-                            <td class="text-center">
-                                <div class="row">
-                                    <a class="m-b-10 m-l-10" href="/detail-gugus">
-                                        <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Detail">
-                                            <i class="anticon anticon-eye"></i>
-                                        </button>  
-                                    </a>
-                                    <a class="m-b-10 m-l-10" href="/edit-gugus">
-                                        <button class="btn btn-icon btn-warning btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Edit">
-                                            <i class="anticon anticon-edit"></i>
-                                        </button> 
-                                    </a>
-                                    <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_gugus">
-                                        <button class="btn btn-icon btn-danger btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Delete">
-                                            <i class="anticon anticon-delete"></i>
-                                        </button>
-                                        <!-- Modal Delete -->
-                                        <div class="modal fade" id="delete_gugus">
-                                            <div class="modal-dialog modal-dialog-centered">
-                                                <div class="modal-content">
-                                                    <div class="modal-body">
-                                                        <div class="text-center font-size-150">
-                                                            <i class="anticon anticon-warning text-warning"></i>
-                                                            <p class="text-dark font-size-16 m-b-40">Apakah anda yakin menghapus Gugus?</p>
-                                                        </div>
-                                                        <div class="text-center">
-                                                            <a type="button" class="btn btn-default" data-dismiss="modal">Batal</a>
-                                                            <button type="button" class="btn btn-danger m-l-10">Hapus</button>
-                                                        </div>
-                                                        <br>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </td>
                         </tr>
                         <tr class="">
                             <td>002/SS/Komp Umum/Dep Corporate Social Responsibili</td>
                             <td>Komp Umum - Dep Corporate Social Responsibility</td>
                             <td>21-09-2021</td>
-                            <td>GIM COLEK 2.</td>
+                            <td>5R COLEK 2.</td>
                             <td>Menihilkan temuan auditor internal terkait belum ada SOP Penagihan Mitra Binaan selama 3 bulan melalui penyusunan PG-IK-69-0031</td>
                             <td>
                                 <a class="m-b-10" data-toggle="modal" data-target=".status-modal">
@@ -155,46 +117,7 @@
                             <td class="text-center"><i class="fas fa-check text-success"></i></td>
                             <td class="text-center"><i class="fas fa-check text-success"></i></td>
                             <td class="text-center"><i class="fas fa-check text-success"></i></td>
-                            <td class="text-center">
-                                <div class="row">
-                                    <a class="m-b-10 m-l-10" href="/detail-gugus">
-                                        <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Detail">
-                                            <i class="anticon anticon-eye"></i>
-                                        </button>  
-                                    </a>
-                                    <a class="m-b-10 m-l-10" href="/edit-gugus">
-                                        <button class="btn btn-icon btn-warning btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Edit">
-                                            <i class="anticon anticon-edit"></i>
-                                        </button> 
-                                    </a>
-                                    <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_gugus">
-                                        <button class="btn btn-icon btn-danger btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Delete">
-                                            <i class="anticon anticon-delete"></i>
-                                        </button>
-                                        <!-- Modal Delete -->
-                                        <div class="modal fade" id="delete_gugus">
-                                            <div class="modal-dialog modal-dialog-centered">
-                                                <div class="modal-content">
-                                                    <div class="modal-body">
-                                                        <div class="text-center font-size-150">
-                                                            <i class="anticon anticon-warning text-warning"></i>
-                                                            <p class="text-dark font-size-16 m-b-40">Apakah anda yakin menghapus Gugus?</p>
-                                                        </div>
-                                                        <div class="text-center">
-                                                            <a type="button" class="btn btn-default" data-dismiss="modal">Batal</a>
-                                                            <button type="button" class="btn btn-danger m-l-10">Hapus</button>
-                                                        </div>
-                                                        <br>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </td>
                         </tr>
-
-
                     </tbody>
                 </table>
             </div>

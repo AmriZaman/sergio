@@ -27,18 +27,36 @@ use App\Http\Controllers\RekapGagasanController;
 |
 */
 //===== LANDING PAGE START =====//
-// Route::get('/', function () {
-//     return view('landpage/home', [
-//         "title" => "Home"
-//     ]);
-// });
+Route::get('/', function () {
+    return view('landpage/home', [
+        "title" => "Home"
+    ]);
+});
 //===== LANDING PAGE END =====//
 
 
 //===== LOGIN START =====//
-Route::get('/', [LoginController::class, 'index']);
+Route::get('/login', [LoginController::class, 'index']);
+Route::post('/login', [LoginController::class, 'authenticate']);
+Route::post('/logout', [LoginController::class, 'logout']);
+
 //===== LOGIN END =====//
 
+//===== PROFIL START =====//
+Route::get('/profil', function () {
+    return view('admin/profile/profile', [
+        "title" => "Profil Karyawan"
+    ]);
+});
+//===== PROFIL END =====//
+
+//===== KLINIK INOVASI START =====//
+Route::get('/klinik-inovasi', function () {
+    return view('admin/klinik inovasi/klinik_inovasi', [
+        "title" => "Klinik Inovasi"
+    ]);
+});
+//===== KLINIK INOVASI END =====//
 
 //===== MENU UTAMA START =====//
 //BERANDA
@@ -47,7 +65,29 @@ Route::get('/beranda', [BerandaController::class, 'index']);
 // PANDUAN INOVASI
 Route::get('/panduan-inovasi', [PanduanController::class, 'index']);
 Route::get('/tambah-panduan', [PanduanController::class, 'create']);
-Route::get('/edit-panduan', [PanduanController::class, 'edit']);
+Route::get('/edit-panduan/{slug}', [PanduanController::class, 'edit']);
+
+//Hall of Fame
+Route::get('/hall-of-fame', function () {
+    return view('admin/menu utama/hall_of_fame', [
+        "title" => "Hall of Fame"
+    ]);
+});
+Route::get('/create-hall-of-fame', function () {
+    return view('admin/menu utama/hof_create', [
+        "title" => "Tambah Hall of Fame"
+    ]);
+});
+Route::get('/edit-hall-of-fame', function () {
+    return view('admin/menu utama/hof_edit', [
+        "title" => "Edit Hall of Fame"
+    ]);
+});
+Route::get('/detail-hall-of-fame', function () {
+    return view('admin/menu utama/hof_detail', [
+        "title" => "Detail Hall of Fame"
+    ]);
+});
 //===== MENU UTAMA END =====//
 
 
@@ -93,6 +133,12 @@ Route::get('/detail-gagasan-departemen', [GagasanController::class, 'kid_show'])
 // APPROVAL SERGIO
 Route::get('/approval-sergio', [InovasiController::class, 'kid_index']);
 Route::get('/detail-approval-sergio', [InovasiController::class, 'kid_show']);
+
+Route::get('/monitoring-gugus-inovasi', function () {
+    return view('admin/menu kid/monitoring_gugus', [
+        "title" => "Monitoring Gugus Inovasi"
+    ]);
+});
 //===== MENU KID END =====//
 
 
@@ -101,12 +147,33 @@ Route::get('/detail-approval-sergio', [InovasiController::class, 'kid_show']);
 // APPROVAL USULAN GAGASAN
 Route::get('/approval-gagasan', [GagasanController::class, 'fasilitator_index']);
 Route::get('/detail-approval-gagasan', [GagasanController::class, 'fasilitator_show']);
+
+Route::get('/approval-plan-action', function () {
+    return view('admin/menu fasilitator/approval_plan_action', [
+        "title" => "Approval Plan Action Inovasi"
+    ]);
+});
+Route::get('/detail-approval-plan-action', function () {
+    return view('admin/menu fasilitator/approval_plan_action_detail', [
+        "title" => "Detail Approval Plan Action Inovasi"
+    ]);
+});
 //===== MENU FASILITATOR END =====//
 
 //===== MENU MANAGER START =====//
 // VERIFIKASI USULAN GAGASAN
 Route::get('/verifikasi-manager', [GagasanController::class, 'manager_index']);
 Route::get('/detail-verifikasi-manager', [GagasanController::class, 'manager_show']);
+Route::get('/verifikasi-plan-action', function () {
+    return view('admin/menu manager/verifikasi_plan_action', [
+        "title" => "Verifikasi Plan Action Inovasi"
+    ]);
+});
+Route::get('/detail-verifikasi-plan-action', function () {
+    return view('admin/menu manager/verifikasi_plan_action_detail', [
+        "title" => "Detail Verifikasi Plan Action Inovasi"
+    ]);
+});
 //===== MENU MANAGER END =====//
 
 //===== MENU DEPARTEMEN START =====//
@@ -117,6 +184,13 @@ Route::get('/detail-verifikasi-departemen', [GagasanController::class, 'dept_sho
 
 
 //===== MENU REKAP KEGIATAN INOVASI START =====//
+// ROADMAP INOVASI
+Route::get('/roadmap-inovasi', function () {
+    return view('admin/menu rekap/roadmap_inovasi', [
+        "title" => "Roadmap Inovasi"
+    ]);
+});
+
 // SUMBANG GAGASAN
 Route::get('/sumbang-gagasan', [RekapGagasanController::class, 'index']);
 Route::get('/detail-sumbang-gagasan', [RekapGagasanController::class, 'show']);
@@ -168,3 +242,159 @@ Route::get('/laporan-sptk', [LaporanController::class, 'sptk_index']);
 // HISTORY SERGIO
 
 //===== MENU LAPORAN END =====//
+
+//===== MENU PENJURIAN START =====//
+Route::get('/inisiasi-penilaian', function () {
+    return view('admin/menu penjurian/inisiasi_penilaian', [
+        "title" => "Inisiasi Penilaian"
+    ]);
+});
+Route::get('/inisiasi-quota', function () {
+    return view('admin/menu penjurian/inisiasi_quota', [
+        "title" => "Inisiasi Quota"
+    ]);
+});
+Route::get('/pilih-koordinator-perusahaan', function () {
+    return view('admin/menu penjurian/koordinator_juri', [
+        "title" => "Pilih Koordinator Perusahaan"
+    ]);
+});
+Route::get('/pilih-juri-kompartemen', function () {
+    return view('admin/menu penjurian/pilih_juri_kompartemen', [
+        "title" => "Pilih Juri Kompartemen"
+    ]);
+});
+Route::get('/pilih-juri-perusahaan', function () {
+    return view('admin/menu penjurian/pilih_juri_perusahaan', [
+        "title" => "Pilih Juri Perusahaan"
+    ]);
+});
+Route::get('/kelompok-juri-kompartemen', function () {
+    return view('admin/menu penjurian/kelompok_juri_kompartemen', [
+        "title" => "Kelompok Juri Kompartemen"
+    ]);
+});
+Route::get('/kelompok-juri-perusahaan', function () {
+    return view('admin/menu penjurian/kelompok_juri_perusahaan', [
+        "title" => "Kelompok Juri Perusahaan"
+    ]);
+});
+Route::get('/pembagian-gugus-tk-kompartemen', function () {
+    return view('admin/menu penjurian/pembagian_gugus_tk_kompartemen', [
+        "title" => "Pembagian Gugus Tk Kompartemen"
+    ]);
+});
+Route::get('/pembagian-gugus-tk-perusahaan', function () {
+    return view('admin/menu penjurian/pembagian_gugus_tk_perusahaan', [
+        "title" => "Pembagian Gugus Tk Perusahaan"
+    ]);
+});
+Route::get('/publish-nilai', function () {
+    return view('admin/menu penjurian/publish_nilai', [
+        "title" => "Publish Nilai"
+    ]);
+});
+Route::get('/integrasi-nilai-kipg', function () {
+    return view('admin/menu penjurian/integrasi_nilai', [
+        "title" => "Integrasi Nilai KIPG"
+    ]);
+});
+//===== MENU PENJURIAN END =====//
+
+//===== MENU JURI START =====//
+Route::get('/nilai-gugus', function () {
+    return view('admin/menu juri/nilai_gugus', [
+        "title" => "Nilai Gugus"
+    ]);
+});
+Route::get('/detail-gugus-juri', function () {
+    return view('admin/menu juri/detail_gugus_juri', [
+        "title" => "Nilai Gugus"
+    ]);
+});
+Route::get('/input-nilai-gugus', function () {
+    return view('admin/menu juri/input_nilai_gugus', [
+        "title" => "Input Nilai Gugus"
+    ]);
+});
+Route::get('/rekap-nilai', function () {
+    return view('admin/menu juri/rekap_nilai_gugus', [
+        "title" => "Rekap Nilai Gugus"
+    ]);
+});
+//===== MENU JURI END =====//
+
+//===== MENU SPTK START =====//
+Route::get('/monitoring-gugus', function () {
+    return view('admin/menu sptk/monitoring_gugus', [
+        "title" => "Monitoring Gugus Inovasi Kompartemen"
+    ]);
+});
+Route::get('/rekap-nilai-gugus', function () {
+    return view('admin/menu sptk/rekap_nilai_gugus', [
+        "title" => "Rekap Nilai Gugus Kompartemen"
+    ]);
+});
+//===== MENU SPTK END =====//
+
+//===== MENU KONVENSI=====//
+Route::get('/inisiasi-konvensi', function () {
+    return view('admin/menu konvensi/inisiasi_konvensi', [
+        "title" => "Inisiasi Konvensi"
+    ]);
+});
+
+Route::get('/edit-inisiasi-konvensi', function () {
+    return view('admin/menu konvensi/inisiasi_konvensi_edit', [
+        "title" => "Edit Inisiasi Konvensi"
+    ]);
+});
+
+Route::get('/konvensi-nasional', function () {
+    return view('admin/menu konvensi/konvensi_nasional', [
+        "title" => "Konvensi Nasional"
+    ]);
+});
+
+Route::get('/edit-gugus-konvensi-nasional', function () {
+    return view('admin/menu konvensi/gugus_konvensi_nasional_edit', [
+        "title" => "Edit Gugus Konvensi Nasional"
+    ]);
+});
+
+Route::get('/detail-gugus-konvensi-nasional', function () {
+    return view('admin/menu konvensi/gugus_konvensi_nasional_detail', [
+        "title" => "Detail Gugus Konvensi Nasional"
+    ]);
+});
+
+Route::get('/konvensi-internasional', function () {
+    return view('admin/menu konvensi/konvensi_internasional', [
+        "title" => "Konvensi Internasional"
+    ]);
+});
+
+Route::get('/edit-gugus-konvensi-internasional', function () {
+    return view('admin/menu konvensi/gugus_konvensi_internasional_edit', [
+        "title" => "Edit Gugus Konvensi Internasional"
+    ]);
+});
+
+Route::get('/detail-gugus-konvensi-internasional', function () {
+    return view('admin/menu konvensi/gugus_konvensi_internasional_detail', [
+        "title" => "Detail Gugus Konvensi Internasional"
+    ]);
+});
+
+Route::get('/rekap-konvensi', function () {
+    return view('admin/menu konvensi/rekap_konvensi', [
+        "title" => "Rekap Konvensi"
+    ]);
+});
+
+Route::get('/detail-rekap-konvensi', function () {
+    return view('admin/menu konvensi/rekap_konvensi_detail', [
+        "title" => "Detail Rekap Konvensi"
+    ]);
+});
+//===== MENU KONVENSI=====//

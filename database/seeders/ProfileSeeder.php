@@ -19,54 +19,61 @@ class ProfileSeeder extends Seeder
         //admin
         Profile::create([
             'nik' => 'bop',
-            'nama' => 'Administrator'
+            'nama' => 'Administrator',
+            'password' => bcrypt('admin')
             // 'bagian' => 'Inovasi'
         ]);
 
         //manager
         Profile::create([
-            'nik' => '2166422',
+            'nik' => 'manager_inovasi',
             'nama' => 'Amri Zaman',
             // 'bagian' => 'Inovasi',
-            'email_1' => 'amri@gmail.com'
+            'email_1' => 'amri@gmail.com',
+            'password' => bcrypt('manager')
         ]);
         Profile::create([
-            'nik' => 'T284088',
+            'nik' => 'manager_riset',
             'nama' => 'Randy',
             // 'bagian' => 'Pabrik 3A',
-            'email_1' => 'randy@gmail.com'
+            'email_1' => 'randy@gmail.com',
+            'password' => bcrypt('manager')
         ]);
 
         //fasilitator
         Profile::create([
-            'nik' => '2166448',
+            'nik' => 'fasilitator_inovasi',
             'nama' => 'Fernaldi',
             // 'bagian' => 'Keamanan',
-            'email_1' => 'fernaldi@gmail.com'
+            'email_1' => 'fernaldi@gmail.com',
+            'password' => bcrypt('fasilitator')
         ]);
 
         //KID
         Profile::create([
-            'nik' => 'T284068',
+            'nik' => 'kid_inovasi',
             'nama' => 'Agung',
             // 'bagian' => 'IT',
-            'email_1' => 'agung@gmail.com'
+            'email_1' => 'agung@gmail.com',
+            'password' => bcrypt('kid')
         ]);
 
         //SPTK
         Profile::create([
-            'nik' => 'T284092',
+            'nik' => 'sptk_inovasi',
             'nama' => 'Aufar',
             // 'bagian' => 'Riset',
-            'email_1' => 'aufar@gmail.com'
+            'email_1' => 'aufar@gmail.com',
+            'password' => bcrypt('sptk')
         ]);
 
         //Biasa
         Profile::create([
-            'nik' => 'T284097',
+            'nik' => 'pegawai_inovasi',
             'nama' => 'Johan',
             // 'bagian' => 'Riset',
-            'email_1' => 'johan@gmail.com'
+            'email_1' => 'johan@gmail.com',
+            'password' => bcrypt('pegawai')
         ]);
 
     }

@@ -2,21 +2,21 @@
 
 @section('breadcrumb')
     <span class="breadcrumb-item"><i class="anticon anticon-appstore"></i>   Menu Utama</span>
-    <a class="breadcrumb-item" href="/berita">Berita</a>
-    <span class="breadcrumb-item active">Edit Berita</span>
+    <a class="breadcrumb-item" href="/hall-of-fame">Hall of Fame</a>
+    <span class="breadcrumb-item active">Edit Hall of Fame</span>
 @endsection
 
 @section('content')
     <div class="card">
         <div class="card-body">
             <div class="d-flex align-items-center justify-content-between m-b-15">
-                <h4 class="m-b-0">Edit Berita Baru</h4>
+                <h4 class="m-b-0">Edit Hall of Fame</h4>
             </div>
             <form id="form-validation">
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label control-label">Judul Berita</label>
+                    <label class="col-sm-2 col-form-label control-label">Judul Hall of Fame</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" name="inputRequired" placeholder="Judul Berita">
+                        <input type="text" class="form-control" name="inputRequired" placeholder="Judul Hall of Fame">
                     </div>
                 </div>
                 <div class="form-group row">
@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label control-label">Isi Berita</label>
+                    <label class="col-sm-2 col-form-label control-label">Isi Hall of Fame</label>
                     <div class="m-b-50 col-sm-10">
                         <div id="berita">
                             <p>Hello World!</p>

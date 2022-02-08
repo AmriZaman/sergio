@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Kategori;
 use Illuminate\Database\Seeder;
 
 class KategoriSeeder extends Seeder
@@ -13,6 +14,15 @@ class KategoriSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Kategori::create([
+            'nama' => 'Perkantoran',
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+        Kategori::create([
+            'nama' => 'Manufaktur',
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
     }
 }

@@ -18889,8 +18889,8 @@ div.is-invalid {
     justify-content: center;
 }
 .chat .conversation .conversation-wrapper .conversation-body .msg.msg-recipient .bubble .bubble-wrapper {
-    background-color: rgba(63, 135, 245, 0.1);
-    color: #1A974B;
+    background-color: #D1F7E0;
+    color: #53535f;
 }
 .chat .conversation .conversation-wrapper .conversation-body .msg.msg-recipient .bubble .bubble-wrapper img {
     max-width: 250px;

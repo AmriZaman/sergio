@@ -35,318 +35,59 @@
     <div class="row">
         <div class="col-lg-12 mx-auto">
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="m-t-10">Contoh Panduan</h4>
-                            <p>Jelly-o sesame snaps halvah croissant oat cake cookie. Cheesecake bear claw topping. Chupa...</p>
-                        </div>
-                        <div class="card-footer">
-                            <div class="d-flex align-items-center">
-                                <div class="col-md-6">
-                                    <p class="m-b-0 text-dark font-weight-semibold font-size-15">Jan 2, 2019</p>
-                                </div>
-                                
-                                <div class="col-md-6 text-right">
-                                    <a data-toggle="modal" data-target="#delete_panduan">
-                                        <button class="btn btn-icon btn-danger btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Delete">
-                                            <i class="anticon anticon-delete"></i>
-                                        </button>
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="delete_panduan">
-                                            <div class="modal-dialog modal-dialog-centered">
-                                                <div class="modal-content">
-                                                    <div class="modal-body">
-                                                        <div class="text-center font-size-150">
-                                                            <i class="anticon anticon-warning text-warning"></i>
-                                                            <p class="text-dark font-size-16">Apakah anda yakin menghapus Panduan?</p>
+                @foreach ($panduans as $panduan)
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="m-t-10">{{ $panduan->judul }}</h4>
+                                <p>{{ $panduan->deskripsi }}</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex align-items-center">
+                                    <div class="col-md-6">
+                                        <p class="m-b-0 text-dark font-weight-semibold font-size-15">20-12-2021</p>
+                                    </div>
+                                    <div class="col-md-6 text-right">
+                                        <a data-toggle="modal" data-target="#hapus_panduan">
+                                            <button class="btn btn-icon btn-danger btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Delete">
+                                                <i class="anticon anticon-delete"></i>
+                                            </button>
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="hapus_panduan">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-body">
+                                                            <div class="text-center font-size-150">
+                                                                <i class="anticon anticon-warning text-warning"></i>
+                                                                <p class="text-dark font-size-16">Apakah anda yakin menghapus Panduan?</p>
+                                                            </div>
+                                                            <br>
+                                                            <div class="text-center">
+                                                                <a type="button" class="btn btn-default" data-dismiss="modal">Batal</a>
+                                                                <button type="button" class="btn btn-danger m-l-10">Hapus</button>
+                                                            </div>
+                                                            <br>
                                                         </div>
-                                                        <br>
-                                                        <div class="text-center">
-                                                            <a type="button" class="btn btn-default" data-dismiss="modal">Batal</a>
-                                                            <button type="button" class="btn btn-danger m-l-10">Hapus</button>
-                                                        </div>
-                                                        <br>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                    <a href="/edit-panduan">
-                                        <button class="btn btn-icon btn-warning btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Edit">
-                                            <i class="anticon anticon-edit"></i>
-                                        </button> 
-                                    </a>
-                                    <a href="">
-                                        <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Download">
-                                            <i class="anticon anticon-download"></i>
-                                        </button>  
-                                    </a>
+                                        </a>
+                                        <a href="/edit-panduan/{{ $panduan->id }}">
+                                            <button class="btn btn-icon btn-warning btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Edit">
+                                                <i class="anticon anticon-edit"></i>
+                                            </button> 
+                                        </a>
+                                        <a href="#">
+                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Download">
+                                                <i class="anticon anticon-download"></i>
+                                            </button>  
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="m-t-10">Contoh Panduan</h4>
-                            <p>Jelly-o sesame snaps halvah croissant oat cake cookie. Cheesecake bear claw topping. Chupa...</p>
-                        </div>
-                        <div class="card-footer">
-                            <div class="d-flex align-items-center">
-                                <div class="col-md-6">
-                                    <p class="m-b-0 text-dark font-weight-semibold font-size-15">Jan 2, 2019</p>
-                                </div>
-                                
-                                <div class="col-md-6 text-right">
-                                    <a data-toggle="modal" data-target="#delete_panduan">
-                                        <button class="btn btn-icon btn-danger btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Delete">
-                                            <i class="anticon anticon-delete"></i>
-                                        </button>
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="delete_panduan">
-                                            <div class="modal-dialog modal-dialog-centered">
-                                                <div class="modal-content">
-                                                    <div class="modal-body">
-                                                        <div class="text-center font-size-150">
-                                                            <i class="anticon anticon-warning text-warning"></i>
-                                                            <p class="font-size-16">Apakah anda yakin menghapus Panduan?</p>
-                                                        </div>
-                                                        <br>
-                                                        <div class="text-center">
-                                                            <a type="button" class="btn btn-default" data-dismiss="modal">Batal</a>
-                                                            <button type="button" class="btn btn-danger m-l-10">Hapus</button>
-                                                        </div>
-                                                        <br>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="/panduan-edit">
-                                        <button class="btn btn-icon btn-warning btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Edit">
-                                            <i class="anticon anticon-edit"></i>
-                                        </button> 
-                                    </a>
-                                    <a href="">
-                                        <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Download">
-                                            <i class="anticon anticon-download"></i>
-                                        </button>  
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="m-t-10">Contoh Panduan</h4>
-                            <p>Jelly-o sesame snaps halvah croissant oat cake cookie. Cheesecake bear claw topping. Chupa...</p>
-                        </div>
-                        <div class="card-footer">
-                            <div class="d-flex align-items-center">
-                                <div class="col-md-6">
-                                    <p class="m-b-0 text-dark font-weight-semibold font-size-15">Jan 2, 2019</p>
-                                </div>
-                                
-                                <div class="col-md-6 text-right">
-                                    <a data-toggle="modal" data-target="#delete_panduan">
-                                        <button class="btn btn-icon btn-danger btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Delete">
-                                            <i class="anticon anticon-delete"></i>
-                                        </button>
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="delete_panduan">
-                                            <div class="modal-dialog modal-dialog-centered">
-                                                <div class="modal-content">
-                                                    <div class="modal-body">
-                                                        <div class="text-center font-size-150">
-                                                            <i class="anticon anticon-warning text-warning"></i>
-                                                            <p class="font-size-16">Apakah anda yakin menghapus Panduan?</p>
-                                                        </div>
-                                                        <br>
-                                                        <div class="text-center">
-                                                            <a type="button" class="btn btn-default" data-dismiss="modal">Batal</a>
-                                                            <button type="button" class="btn btn-danger m-l-10">Hapus</button>
-                                                        </div>
-                                                        <br>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="/panduan-edit">
-                                        <button class="btn btn-icon btn-warning btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Edit">
-                                            <i class="anticon anticon-edit"></i>
-                                        </button> 
-                                    </a>
-                                    <a href="">
-                                        <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Download">
-                                            <i class="anticon anticon-download"></i>
-                                        </button>  
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="m-t-10">Contoh Panduan</h4>
-                            <p>Jelly-o sesame snaps halvah croissant oat cake cookie. Cheesecake bear claw topping. Chupa...</p>
-                        </div>
-                        <div class="card-footer">
-                            <div class="d-flex align-items-center">
-                                <div class="col-md-6">
-                                    <p class="m-b-0 text-dark font-weight-semibold font-size-15">Jan 2, 2019</p>
-                                </div>
-                                
-                                <div class="col-md-6 text-right">
-                                    <a data-toggle="modal" data-target="#delete_panduan">
-                                        <button class="btn btn-icon btn-danger btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Delete">
-                                            <i class="anticon anticon-delete"></i>
-                                        </button>
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="delete_panduan">
-                                            <div class="modal-dialog modal-dialog-centered">
-                                                <div class="modal-content">
-                                                    <div class="modal-body">
-                                                        <div class="text-center font-size-150">
-                                                            <i class="anticon anticon-warning text-warning"></i>
-                                                            <p class="font-size-16">Apakah anda yakin menghapus Panduan?</p>
-                                                        </div>
-                                                        <br>
-                                                        <div class="text-center">
-                                                            <a type="button" class="btn btn-default" data-dismiss="modal">Batal</a>
-                                                            <button type="button" class="btn btn-danger m-l-10">Hapus</button>
-                                                        </div>
-                                                        <br>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="/panduan-edit">
-                                        <button class="btn btn-icon btn-warning btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Edit">
-                                            <i class="anticon anticon-edit"></i>
-                                        </button> 
-                                    </a>
-                                    <a href="">
-                                        <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Download">
-                                            <i class="anticon anticon-download"></i>
-                                        </button>  
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="m-t-10">Contoh Panduan</h4>
-                            <p>Jelly-o sesame snaps halvah croissant oat cake cookie. Cheesecake bear claw topping. Chupa...</p>
-                        </div>
-                        <div class="card-footer">
-                            <div class="d-flex align-items-center">
-                                <div class="col-md-6">
-                                    <p class="m-b-0 text-dark font-weight-semibold font-size-15">Jan 2, 2019</p>
-                                </div>
-                                
-                                <div class="col-md-6 text-right">
-                                    <a data-toggle="modal" data-target="#delete_panduan">
-                                        <button class="btn btn-icon btn-danger btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Delete">
-                                            <i class="anticon anticon-delete"></i>
-                                        </button>
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="delete_panduan">
-                                            <div class="modal-dialog modal-dialog-centered">
-                                                <div class="modal-content">
-                                                    <div class="modal-body">
-                                                        <div class="text-center font-size-150">
-                                                            <i class="anticon anticon-warning text-warning"></i>
-                                                            <p class="font-size-16">Apakah anda yakin menghapus Panduan?</p>
-                                                        </div>
-                                                        <br>
-                                                        <div class="text-center">
-                                                            <a type="button" class="btn btn-default" data-dismiss="modal">Batal</a>
-                                                            <button type="button" class="btn btn-danger m-l-10">Hapus</button>
-                                                        </div>
-                                                        <br>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="/panduan-edit">
-                                        <button class="btn btn-icon btn-warning btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Edit">
-                                            <i class="anticon anticon-edit"></i>
-                                        </button> 
-                                    </a>
-                                    <a href="">
-                                        <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Download">
-                                            <i class="anticon anticon-download"></i>
-                                        </button>  
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="m-t-10">Contoh Panduan</h4>
-                            <p>Jelly-o sesame snaps halvah croissant oat cake cookie. Cheesecake bear claw topping. Chupa...</p>
-                        </div>
-                        <div class="card-footer">
-                            <div class="d-flex align-items-center">
-                                <div class="col-md-6">
-                                    <p class="m-b-0 text-dark font-weight-semibold font-size-15">Jan 2, 2019</p>
-                                </div>
-                                
-                                <div class="col-md-6 text-right">
-                                    <a data-toggle="modal" data-target="#delete_panduan">
-                                        <button class="btn btn-icon btn-danger btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Delete">
-                                            <i class="anticon anticon-delete"></i>
-                                        </button>
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="delete_panduan">
-                                            <div class="modal-dialog modal-dialog-centered">
-                                                <div class="modal-content">
-                                                    <div class="modal-body">
-                                                        <div class="text-center font-size-150">
-                                                            <i class="anticon anticon-warning text-warning"></i>
-                                                            <p class="font-size-16">Apakah anda yakin menghapus Panduan?</p>
-                                                        </div>
-                                                        <br>
-                                                        <div class="text-center">
-                                                            <a type="button" class="btn btn-default" data-dismiss="modal">Batal</a>
-                                                            <button type="button" class="btn btn-danger m-l-10">Hapus</button>
-                                                        </div>
-                                                        <br>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="/panduan-edit">
-                                        <button class="btn btn-icon btn-warning btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Edit">
-                                            <i class="anticon anticon-edit"></i>
-                                        </button> 
-                                    </a>
-                                    <a href="">
-                                        <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom" title="Download">
-                                            <i class="anticon anticon-download"></i>
-                                        </button>  
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>

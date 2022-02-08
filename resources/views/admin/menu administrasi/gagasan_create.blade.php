@@ -22,20 +22,7 @@
             </div>
             <div class="card-body">
                 <h4>Pilih Periode Sumbang Gagasan</h4>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="radio">
-                            <input id="radio1" name="radioDemo" type="radio" checked="">
-                            <label for="radio1">21.1 - Sumbang Gagasan 2021-2022</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="radio">
-                            <input id="radio2" name="radioDemo" type="radio">
-                            <label for="radio2">20.1 - Sumbang Gagasan 2020-2021</label>
-                        </div>
-                    </div>
-                </div>
+                <input type="text" class="form-control" id="formGroupExampleInput" value="21.1 - Sumbang Gagasan PERIODE 2021-2022" disabled>
             </div>
             <div class="card-body">
                 <h4>Pilih Departemen Tujuan</h4>
@@ -44,6 +31,15 @@
                     <option value="NL">Kompartemen A - Departemen B</option>
                     <option value="BN">Kompartemen B - Departemen A</option>
                     <option value="HL">Kompartemen C - Departemen A</option>
+                </select>
+            </div>
+            <div class="card-body">
+                <h4>Pilih Fasilitator</h4>
+                <select class="select2" name="state">
+                    <option value="AP">Pilih Fasilitator</option>
+                    <option value="NL">Susi Susanti</option>
+                    <option value="BN">Wahyudi</option>
+                    <option value="HL">Johan</option>
                 </select>
             </div>
             <div class="card-body">

@@ -219,22 +219,17 @@
                 </select>
             </div>
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-4">
                     <button class="btn btn-danger" style="width: 100%">
                         <i class="fas fa-times"></i> Tolak
                     </button>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-4">
                     <button class="btn btn-default" style="width: 100%">
                         <i class="fas fa-sync-alt"></i> Revisi
                     </button>
                 </div>
-                <div class="col-lg-3">
-                    <button class="btn btn-warning" style="width: 100%">
-                        <i class="fas fa-check"></i> Terima dengan catatan
-                    </button>
-                </div>
-                <div class="col-lg-3">
+                <div class="col-lg-4">
                     <button class="btn btn-success" style="width: 100%">
                         <i class="fas fa-check"></i> Terima
                     </button>

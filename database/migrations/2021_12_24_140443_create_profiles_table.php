@@ -23,6 +23,7 @@ class CreateProfilesTable extends Migration
             $table-> string('ext',10)->nullable();
             $table-> tinyinteger('is_notif_email1')->nullable(); 
             $table-> tinyinteger('is_notif_email2')->nullable();
+            $table-> string('password');
             $table-> timestamps();
         });
     }

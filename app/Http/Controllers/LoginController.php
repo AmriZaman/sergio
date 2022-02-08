@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+// use App\Models\Profile;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -16,6 +18,29 @@ class LoginController extends Controller
         return view('admin/login/login', [
             "title" => "Login"
         ]);
+    }
+
+    public function authenticate (Request $request)
+    {
+        $credentials = $request->validate([
+            'nik' => 'required',
+            'password' => 'required'
+        ]);
+        if(Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+            return redirect()->intended('/beranda');
+            // dd($credentials);
+        }
+
+        return back()->with('loginError', 'Login Gagal, silahkan cek kambali Nik & Password anda.');
+    }
+
+    public function logout(Request $request)
+    {
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect('/');
     }
 
     /**

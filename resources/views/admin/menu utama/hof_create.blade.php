@@ -2,21 +2,21 @@
 
 @section('breadcrumb')
     <span class="breadcrumb-item"><i class="anticon anticon-appstore"></i>   Menu Utama</span>
-    <a class="breadcrumb-item" href="/berita">Berita</a>
-    <span class="breadcrumb-item active">Tambah Berita</span>
+    <a class="breadcrumb-item" href="/hall-of-fame">Hall of Fame</a>
+    <span class="breadcrumb-item active">Tambah Hall of Fame</span>
 @endsection
 
 @section('content')
     <div class="card">
         <div class="card-body">
             <div class="d-flex align-items-center justify-content-between m-b-15">
-                <h4 class="m-b-0">Tambah Berita Baru</h4>
+                <h4 class="m-b-0">Tambah Hall of Fame Baru</h4>
             </div>
             <form id="form-validation">
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label control-label">Judul Berita</label>
+                    <label class="col-sm-2 col-form-label control-label">Judul Hall of Fame</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" name="judul_berita" placeholder="Judul Berita">
+                        <input type="text" class="form-control" name="judul_Hall of Fame" placeholder="Judul Hall of Fame">
                     </div>
                 </div>
                 <div class="form-group row">
@@ -26,9 +26,9 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label control-label">Isi Berita</label>
+                    <label class="col-sm-2 col-form-label control-label">Isi Hall of Fame</label>
                     <div class="m-b-50 col-sm-10">
-                        <div id="berita">
+                        <div id="Hall_of_Fame">
                             <p>Hello World!</p>
                             <p>Some initial <strong>bold</strong> text</p>
                             <p><br></p>
@@ -48,7 +48,7 @@
     {{-- <script src="assets/vendors/jquery-validation/jquery.validate.min.js"></script> --}}
 
     <script>
-        new Quill('#berita', {theme: 'snow'});
+        new Quill('#Hall_of_Fame', {theme: 'snow'});
     </script>
 
     {{-- <script>
@@ -58,7 +58,7 @@
             errorClass: 'is-invalid',
             validClass: 'is-valid',
             rules: {
-                judul_berita: {
+                judul_Hall of Fame: {
                     required: true
                     maxlength: 8
                 },

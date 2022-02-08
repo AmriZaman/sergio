@@ -14,26 +14,25 @@
     <div class="card">
         <div class="card-body">
             <div class="d-flex align-items-center justify-content-between m-b-15">
-                <h4 class="m-b-0">Tambah Panduan Inovasi</h4>
+                <h4 class="m-b-0">Edit {{ $panduan->judul }}</h4>
             </div>
             <form id="form-validation">
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label control-label">Judul Panduan</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" name="judul_panduan" placeholder="Judul Panduan">
+                        <input type="text" class="form-control" name="judul_panduan" placeholder="Judul Panduan" value="{{ $panduan->judul }}">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label control-label">Deskripsi</label>
                     <div class="m-b-50 col-sm-10">
                         <div id="panduan">
-                            <p>Hello World!</p>
-                            <p>Some initial <strong>bold</strong> text</p>
+                            <p>{{ $panduan->deskripsi }}</p>
                         </div>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label control-label">Isi Berita</label>
+                    <label class="col-sm-2 col-form-label control-label">Dokumen</label>
                     <div class="col-sm-10">
                         <div class="custom-file">
                             <input type="file" class="custom-file-input" id="customFile">
@@ -42,7 +41,8 @@
                     </div>
                 </div>
                 <div class="form-group text-right">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+                    <a href="/panduan-inovasi"><button type="button" class="btn btn-default" data-dismiss="modal">Batal</button></a>
+
                     <button type="button" class="btn btn-success m-l-10">Edit</button>
                 </div>
             </form>

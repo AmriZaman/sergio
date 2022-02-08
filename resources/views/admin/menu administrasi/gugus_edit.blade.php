@@ -376,6 +376,70 @@
                     </a>
                     <button class="btn btn-success btn-xs m-b-20">Pilih sebagai Sekretaris</button>
                 </div>
+                <div class="col-lg-4 text-center m-t-150">
+                    <a class="" data-toggle="modal" data-target=".anggota-modal">
+                        <button class="btn btn-success btn-xs m-b-20">Tambah Anggota</button>
+                    </a>
+                    {{-- modal --}}
+                    <div class="modal fade anggota-modal">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title h4">Tambah Anggota Gugus</h5>
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <i class="anticon anticon-close"></i>
+                                    </button>
+                                </div>
+                                <form action="">
+                                    <div class="modal-body">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="">
+                                                    <table id="data-table2" class="table table-bordered" style="width: 100%">
+                                                        <thead>
+                                                            <tr>
+                                                                <th><strong>NIK</strong></th>
+                                                                <th><strong>Nama</strong></th>
+                                                                <th><strong>POS Title</strong></th>
+                                                                <th><strong>Aksi</strong></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>T314597</td>
+                                                                <td>ABDUL MALIK</td>
+                                                                <td>AVP Pengantongan I A & Produk Samping</td>
+                                                                <td>
+                                                                    <button class="btn btn-success btn-sm">Pilih</button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>T314597</td>
+                                                                <td>ABDUL MALIK</td>
+                                                                <td>AVP Pengantongan I A & Produk Samping</td>
+                                                                <td>
+                                                                    <button class="btn btn-success btn-sm">Pilih</button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>T314597</td>
+                                                                <td>ABDUL MALIK</td>
+                                                                <td>AVP Pengantongan I A & Produk Samping</td>
+                                                                <td>
+                                                                    <button class="btn btn-success btn-sm">Pilih</button>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -1158,7 +1222,7 @@
 
     <div class="m-t-20">
         <button class="btn btn-success btn-block">Simpan Perubahan</button>
-    </div
+    </div>
 @endsection
 
 @section('js')

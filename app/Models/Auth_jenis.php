@@ -9,8 +9,6 @@ class Auth_jenis extends Model
 {
     use HasFactory;
 
-    protected $guarded = ['id'];
-
     public function auth ()
     {
         return $this-> hasMany(Auth::class);

@@ -15,7 +15,8 @@ class PanduanController extends Controller
     public function index()
     {
         return view('admin/menu utama/panduan_list', [
-            "title" => "Panduan Inovasi"
+            "title" => "Panduan Inovasi",
+            "panduans" => Panduan::all()
         ]);
     }
 
@@ -26,7 +27,7 @@ class PanduanController extends Controller
      */
     public function create()
     {
-        return view('admin/menu utama/panduan_create', [
+        return view('admin.menu utama.panduan_create', [
             "title" => "Tambah Panduan"
         ]);
     }
@@ -59,10 +60,11 @@ class PanduanController extends Controller
      * @param  \App\Models\Panduan  $panduan
      * @return \Illuminate\Http\Response
      */
-    public function edit(Panduan $panduan)
+    public function edit($slug)
     {
-        return view('admin/menu utama/panduan_edit', [
-            "title" => "Edit Panduan"
+        return view('admin.menu utama.panduan_edit', [
+            "title" => "Edit Panduan",
+            "panduan" => Panduan::find($slug)
         ]);
     }
 

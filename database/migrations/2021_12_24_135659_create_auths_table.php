@@ -16,10 +16,9 @@ class CreateAuthsTable extends Migration
         Schema::create('auths', function (Blueprint $table) {
             $table-> id();
             $table-> string('nik',50)->references('nik')->on('profiles');
-            $table-> string('kode_periode_sg',6)->references('kode')->on('sg_periode');
-            $table-> string('kode_periode_srg',6)->references('kode')->on('srg_periode');
-            $table-> string('kode_jenis',50)->references('id')->on('auth_jenis');
-            $table-> string('password',30);
+            $table-> string('kode_periode_sg',6)->nullable()->references('kode')->on('sg_periode');
+            $table-> string('kode_periode_srg',6)->nullable()->references('kode')->on('srg_periode');
+            $table-> string('kode_jenis',50)->nullable()->references('id')->on('auth_jenis');
             $table->timestamps();
 
             // $table->foreign('nik')->references('nik')->on('profiles');
