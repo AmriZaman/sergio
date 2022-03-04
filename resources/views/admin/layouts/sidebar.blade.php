@@ -138,6 +138,37 @@
             <li class="nav-item dropdown">
                 <a class="dropdown-toggle" href="javascript:void(0);">
                     <span class="icon-holder">
+                        <i class="fas fa-users"></i>
+                    </span>
+                    <span class="title">Menu Value Creation</span>
+                    <span class="arrow">
+                        <i class="arrow-icon"></i>
+                    </span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li class="{{ (($title === "Koordinator Value Creation")) ? 'active' : '' }}">
+                        <a href="koordinator-value-creation">Pilih Koordinator</a>
+                    </li>
+                </ul>
+                <ul class="dropdown-menu">
+                    <li class="{{ (($title === "Pembagian Gugus Value Creation")) ? 'active' : '' }}">
+                        <a href="pembagian-gugus-value-creation">Pembagian Gugus</a>
+                    </li>
+                </ul>
+                <ul class="dropdown-menu">
+                    <li class="{{ (($title === "Verifikasi Penghematan") or ($title === "Input Hasil Verifikasi Penghematan") or ($title === "Detail Gugus Value Creation")) ? 'active' : '' }}">
+                        <a href="verifikasi-penghematan">Verifikasi Penghematan</a>
+                    </li>
+                </ul>
+                <ul class="dropdown-menu">
+                    <li class="{{ (($title === "Rekap Penghematan")) ? 'active' : '' }}">
+                        <a href="rekap-penghematan">Rekap Penghematan</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="javascript:void(0);">
+                    <span class="icon-holder">
                         <i class="fas fa-building"></i>
                     </span>
                     <span class="title">Menu Departemen</span>

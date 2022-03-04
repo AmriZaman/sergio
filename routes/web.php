@@ -337,6 +337,39 @@ Route::get('/rekap-nilai-gugus', function () {
 });
 //===== MENU SPTK END =====//
 
+//===== MENU VALUE CREATION START =====//
+Route::get('/koordinator-value-creation', function () {
+    return view('admin/menu value creation/koordinator', [
+        "title" => "Koordinator Value Creation"
+    ]);
+});
+Route::get('/pembagian-gugus-value-creation', function () {
+    return view('admin/menu value creation/pembagian_gugus', [
+        "title" => "Pembagian Gugus Value Creation"
+    ]);
+});
+Route::get('/verifikasi-penghematan', function () {
+    return view('admin/menu value creation/verifikasi_penghematan', [
+        "title" => "Verifikasi Penghematan"
+    ]);
+});
+Route::get('/detail-gugus-value-creation', function () {
+    return view('admin/menu value creation/detail_gugus_value_creation', [
+        "title" => "Detail Gugus Value Creation"
+    ]);
+});
+Route::get('/input-hasil-verifikasi-penghematan', function () {
+    return view('admin/menu value creation/verifikasi_penghematan_input', [
+        "title" => "Input Hasil Verifikasi Penghematan"
+    ]);
+});
+Route::get('/rekap-penghematan', function () {
+    return view('admin/menu value creation/rekap_penghematan', [
+        "title" => "Rekap Penghematan"
+    ]);
+});
+//===== MENU VALUE CREATION END =====//
+
 //===== MENU KONVENSI=====//
 Route::get('/inisiasi-konvensi', function () {
     return view('admin/menu konvensi/inisiasi_konvensi', [

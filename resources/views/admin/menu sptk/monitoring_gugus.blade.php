@@ -46,474 +46,28 @@
                         <tr>
                             <th><strong>Metodologi</strong></th>
                             <th><strong>Jumlah Gugus</strong></th>
-                            {{-- <th><strong>Pilih Gugus untuk KIK</strong></th> --}}
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>SS (Sistem Saran)</td>
                             <td>10</td>
-                            {{-- <td>
-                                <button class="btn btn-success btn-tone btn-sm m-r-5" data-toggle="modal" data-target=".tambah-gugus"><i class="fas fa-plus"></i>  Pilih Gugus</button>
-
-                                <div class="modal fade tambah-gugus">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title h4">Pilih Gugus</h5>
-                                                <button type="button" class="close" data-dismiss="modal">
-                                                    <i class="anticon anticon-close"></i>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <select class="select2" name="state">
-                                                            <option value="AP">Semua Departemen</option>
-                                                            <option value="NL">Nails</option>
-                                                            <option value="BN">Bananas</option>
-                                                            <option value="HL">Helicopters</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <select class="select2" name="state">
-                                                            <option value="AP">Semua Bidang</option>
-                                                            <option value="NL">Nails</option>
-                                                            <option value="BN">Bananas</option>
-                                                            <option value="HL">Helicopters</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <div class="col-lg-12">
-                                                    <div class="table-responsive">
-                                                        <table id="data-table" class="table table-bordered" style="width:100%">
-                                                            <thead>
-                                                                <tr class="">
-                                                                    <th><strong>Gugus</strong></th>
-                                                                    <th><strong>Metodologi - Bidang</strong></th>
-                                                                    <th><strong>Departemen</strong></th>
-                                                                    <th><strong>Aksi</strong></th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr class="">
-                                                                    <td>SS Sergio</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Inovasi & Sisman</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td>SS P-Men</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Inovasi & Sisman</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td>SS Satpam</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Keamanan</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td> --}}
                         </tr>
                         <tr>
                             <td>GIO (Gugus Inovasi Operasional)</td>
                             <td>13</td>
-                            {{-- <td>
-                                <button class="btn btn-success btn-tone btn-sm m-r-5" data-toggle="modal" data-target=".tambah-gugus"><i class="fas fa-plus"></i>  Pilih Gugus</button>
-
-                                <div class="modal fade tambah-gugus">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title h4">Pilih Gugus</h5>
-                                                <button type="button" class="close" data-dismiss="modal">
-                                                    <i class="anticon anticon-close"></i>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <select class="select2" name="state">
-                                                            <option value="AP">Semua Departemen</option>
-                                                            <option value="NL">Nails</option>
-                                                            <option value="BN">Bananas</option>
-                                                            <option value="HL">Helicopters</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <select class="select2" name="state">
-                                                            <option value="AP">Semua Bidang</option>
-                                                            <option value="NL">Nails</option>
-                                                            <option value="BN">Bananas</option>
-                                                            <option value="HL">Helicopters</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <div class="col-lg-12">
-                                                    <div class="table-responsive">
-                                                        <table id="data-table" class="table table-bordered" style="width:100%">
-                                                            <thead>
-                                                                <tr class="">
-                                                                    <th><strong>Gugus</strong></th>
-                                                                    <th><strong>Metodologi - Bidang</strong></th>
-                                                                    <th><strong>Departemen</strong></th>
-                                                                    <th><strong>Aksi</strong></th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr class="">
-                                                                    <td>SS Sergio</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Inovasi & Sisman</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td>SS P-Men</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Inovasi & Sisman</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td>SS Satpam</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Keamanan</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td> --}}
                         </tr>
                         <tr>
                             <td>GIM (Gugus Inovasi Managerial)</td>
                             <td>3</td>
-                            {{-- <td>
-                                <button class="btn btn-success btn-tone btn-sm m-r-5" data-toggle="modal" data-target=".tambah-gugus"><i class="fas fa-plus"></i>  Pilih Gugus</button>
-
-                                <div class="modal fade tambah-gugus">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title h4">Pilih Gugus</h5>
-                                                <button type="button" class="close" data-dismiss="modal">
-                                                    <i class="anticon anticon-close"></i>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <select class="select2" name="state">
-                                                            <option value="AP">Semua Departemen</option>
-                                                            <option value="NL">Nails</option>
-                                                            <option value="BN">Bananas</option>
-                                                            <option value="HL">Helicopters</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <select class="select2" name="state">
-                                                            <option value="AP">Semua Bidang</option>
-                                                            <option value="NL">Nails</option>
-                                                            <option value="BN">Bananas</option>
-                                                            <option value="HL">Helicopters</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <div class="col-lg-12">
-                                                    <div class="table-responsive">
-                                                        <table id="data-table" class="table table-bordered" style="width:100%">
-                                                            <thead>
-                                                                <tr class="">
-                                                                    <th><strong>Gugus</strong></th>
-                                                                    <th><strong>Metodologi - Bidang</strong></th>
-                                                                    <th><strong>Departemen</strong></th>
-                                                                    <th><strong>Aksi</strong></th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr class="">
-                                                                    <td>SS Sergio</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Inovasi & Sisman</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td>SS P-Men</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Inovasi & Sisman</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td>SS Satpam</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Keamanan</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td> --}}
                         </tr>
                         <tr>
                             <td>IP (Individual Project)</td>
                             <td>17</td>
-                            {{-- <td>
-                                <button class="btn btn-success btn-tone btn-sm m-r-5" data-toggle="modal" data-target=".tambah-gugus"><i class="fas fa-plus"></i>  Pilih Gugus</button>
-
-                                <div class="modal fade tambah-gugus">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title h4">Pilih Gugus</h5>
-                                                <button type="button" class="close" data-dismiss="modal">
-                                                    <i class="anticon anticon-close"></i>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <select class="select2" name="state">
-                                                            <option value="AP">Semua Departemen</option>
-                                                            <option value="NL">Nails</option>
-                                                            <option value="BN">Bananas</option>
-                                                            <option value="HL">Helicopters</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <select class="select2" name="state">
-                                                            <option value="AP">Semua Bidang</option>
-                                                            <option value="NL">Nails</option>
-                                                            <option value="BN">Bananas</option>
-                                                            <option value="HL">Helicopters</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <div class="col-lg-12">
-                                                    <div class="table-responsive">
-                                                        <table id="data-table" class="table table-bordered" style="width:100%">
-                                                            <thead>
-                                                                <tr class="">
-                                                                    <th><strong>Gugus</strong></th>
-                                                                    <th><strong>Metodologi - Bidang</strong></th>
-                                                                    <th><strong>Departemen</strong></th>
-                                                                    <th><strong>Aksi</strong></th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr class="">
-                                                                    <td>SS Sergio</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Inovasi & Sisman</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td>SS P-Men</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Inovasi & Sisman</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td>SS Satpam</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Keamanan</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td> --}}
                         </tr>
                         <tr>
                             <td>5R</td>
                             <td>6</td>
-                            {{-- <td>
-                                <button class="btn btn-success btn-tone btn-sm m-r-5" data-toggle="modal" data-target=".tambah-gugus"><i class="fas fa-plus"></i>  Pilih Gugus</button>
-
-                                <div class="modal fade tambah-gugus">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title h4">Pilih Gugus</h5>
-                                                <button type="button" class="close" data-dismiss="modal">
-                                                    <i class="anticon anticon-close"></i>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <select class="select2" name="state">
-                                                            <option value="AP">Semua Departemen</option>
-                                                            <option value="NL">Nails</option>
-                                                            <option value="BN">Bananas</option>
-                                                            <option value="HL">Helicopters</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <select class="select2" name="state">
-                                                            <option value="AP">Semua Bidang</option>
-                                                            <option value="NL">Nails</option>
-                                                            <option value="BN">Bananas</option>
-                                                            <option value="HL">Helicopters</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <div class="col-lg-12">
-                                                    <div class="table-responsive">
-                                                        <table id="data-table" class="table table-bordered" style="width:100%">
-                                                            <thead>
-                                                                <tr class="">
-                                                                    <th><strong>Gugus</strong></th>
-                                                                    <th><strong>Metodologi - Bidang</strong></th>
-                                                                    <th><strong>Departemen</strong></th>
-                                                                    <th><strong>Aksi</strong></th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr class="">
-                                                                    <td>SS Sergio</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Inovasi & Sisman</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td>SS P-Men</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Inovasi & Sisman</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td>SS Satpam</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Keamanan</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td> --}}
                         </tr>
                         <tr>
                             <td><strong>TOTAL</strong></td>
@@ -523,8 +77,94 @@
                 </table>
             </div>
 
-            <div class="d-flex align-items-center justify-content-between m-t-20">
+            <div class="d-flex align-items-center justify-content-between m-t-20 m-b-10">
                 <h4 class="card-title">Daftar Gugus Mengikuti KIK</h4>
+                <button class="btn btn-success btn-tone btn-sm m-r-5" data-toggle="modal" data-target=".tambah-gugus"><i class="fas fa-plus"></i>  Pilih Gugus untuk KIPG</button>
+                <div class="modal fade tambah-gugus">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title h4">Pilih Gugus (Quota: 3 Gugus)</h5>
+                                <button type="button" class="close" data-dismiss="modal">
+                                    <i class="anticon anticon-close"></i>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <select class="select2" name="state">
+                                            <option value="AP">Semua Departemen</option>
+                                            <option value="NL">Nails</option>
+                                            <option value="BN">Bananas</option>
+                                            <option value="HL">Helicopters</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <select class="select2" name="state">
+                                            <option value="AP">Semua Bidang</option>
+                                            <option value="NL">Nails</option>
+                                            <option value="BN">Bananas</option>
+                                            <option value="HL">Helicopters</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="col-lg-12">
+                                    <div class="table-responsive">
+                                        <table id="data-table" class="table table-bordered" style="width:100%">
+                                            <thead>
+                                                <tr class="">
+                                                    <th><strong>Gugus</strong></th>
+                                                    <th><strong>Metodologi - Bidang</strong></th>
+                                                    <th><strong>Departemen</strong></th>
+                                                    <th><strong>Aksi</strong></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="">
+                                                    <td>SS Sergio</td>
+                                                    <td>SS - Perkantoran</td>
+                                                    <td>Inovasi & Sisman</td>
+                                                    <td>
+                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
+                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
+                                                                <i class="anticon anticon-plus"></i>
+                                                            </button>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr class="">
+                                                    <td>SS P-Men</td>
+                                                    <td>SS - Perkantoran</td>
+                                                    <td>Inovasi & Sisman</td>
+                                                    <td>
+                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
+                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
+                                                                <i class="anticon anticon-plus"></i>
+                                                            </button>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr class="">
+                                                    <td>SS Satpam</td>
+                                                    <td>SS - Perkantoran</td>
+                                                    <td>Keamanan</td>
+                                                    <td>
+                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
+                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
+                                                                <i class="anticon anticon-plus"></i>
+                                                            </button>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="table-responsive">
                 <table class="table table-bordered" style="width: 100%">
@@ -532,469 +172,28 @@
                         <tr>
                             <th><strong>Metodologi</strong></th>
                             <th><strong>Jumlah Gugus</strong></th>
-                            <th><strong>Pilih Gugus untuk KIPG</strong></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>SS (Sistem Saran)</td>
                             <td>6</td>
-                            <td>
-                                <button class="btn btn-success btn-tone btn-sm m-r-5" data-toggle="modal" data-target=".tambah-gugus"><i class="fas fa-plus"></i>  Pilih Gugus</button>
-                                <div class="modal fade tambah-gugus">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title h4">Pilih Gugus (Quota: 3 Gugus)</h5>
-                                                <button type="button" class="close" data-dismiss="modal">
-                                                    <i class="anticon anticon-close"></i>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <select class="select2" name="state">
-                                                            <option value="AP">Semua Departemen</option>
-                                                            <option value="NL">Nails</option>
-                                                            <option value="BN">Bananas</option>
-                                                            <option value="HL">Helicopters</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <select class="select2" name="state">
-                                                            <option value="AP">Semua Bidang</option>
-                                                            <option value="NL">Nails</option>
-                                                            <option value="BN">Bananas</option>
-                                                            <option value="HL">Helicopters</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <div class="col-lg-12">
-                                                    <div class="table-responsive">
-                                                        <table id="data-table" class="table table-bordered" style="width:100%">
-                                                            <thead>
-                                                                <tr class="">
-                                                                    <th><strong>Gugus</strong></th>
-                                                                    <th><strong>Metodologi - Bidang</strong></th>
-                                                                    <th><strong>Departemen</strong></th>
-                                                                    <th><strong>Aksi</strong></th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr class="">
-                                                                    <td>SS Sergio</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Inovasi & Sisman</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td>SS P-Men</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Inovasi & Sisman</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td>SS Satpam</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Keamanan</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
                         </tr>
                         <tr>
                             <td>GIO (Gugus Inovasi Operasional)</td>
                             <td>5</td>
-                            <td>
-                                <button class="btn btn-success btn-tone btn-sm m-r-5" data-toggle="modal" data-target=".tambah-gugus"><i class="fas fa-plus"></i>  Pilih Gugus</button>
-                                <div class="modal fade tambah-gugus">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title h4">Pilih Gugus (Quota: 3 Gugus)</h5>
-                                                <button type="button" class="close" data-dismiss="modal">
-                                                    <i class="anticon anticon-close"></i>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <select class="select2" name="state">
-                                                            <option value="AP">Semua Departemen</option>
-                                                            <option value="NL">Nails</option>
-                                                            <option value="BN">Bananas</option>
-                                                            <option value="HL">Helicopters</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <select class="select2" name="state">
-                                                            <option value="AP">Semua Bidang</option>
-                                                            <option value="NL">Nails</option>
-                                                            <option value="BN">Bananas</option>
-                                                            <option value="HL">Helicopters</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <div class="col-lg-12">
-                                                    <div class="table-responsive">
-                                                        <table id="data-table" class="table table-bordered" style="width:100%">
-                                                            <thead>
-                                                                <tr class="">
-                                                                    <th><strong>Gugus</strong></th>
-                                                                    <th><strong>Metodologi - Bidang</strong></th>
-                                                                    <th><strong>Departemen</strong></th>
-                                                                    <th><strong>Aksi</strong></th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr class="">
-                                                                    <td>SS Sergio</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Inovasi & Sisman</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td>SS P-Men</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Inovasi & Sisman</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td>SS Satpam</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Keamanan</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
                         </tr>
                         <tr>
                             <td>GIM (Gugus Inovasi Managerial)</td>
                             <td>1</td>
-                            <td>
-                                <button class="btn btn-success btn-tone btn-sm m-r-5" data-toggle="modal" data-target=".tambah-gugus"><i class="fas fa-plus"></i>  Pilih Gugus</button>
-                                <div class="modal fade tambah-gugus">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title h4">Pilih Gugus (Quota: 3 Gugus)</h5>
-                                                <button type="button" class="close" data-dismiss="modal">
-                                                    <i class="anticon anticon-close"></i>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <select class="select2" name="state">
-                                                            <option value="AP">Semua Departemen</option>
-                                                            <option value="NL">Nails</option>
-                                                            <option value="BN">Bananas</option>
-                                                            <option value="HL">Helicopters</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <select class="select2" name="state">
-                                                            <option value="AP">Semua Bidang</option>
-                                                            <option value="NL">Nails</option>
-                                                            <option value="BN">Bananas</option>
-                                                            <option value="HL">Helicopters</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <div class="col-lg-12">
-                                                    <div class="table-responsive">
-                                                        <table id="data-table" class="table table-bordered" style="width:100%">
-                                                            <thead>
-                                                                <tr class="">
-                                                                    <th><strong>Gugus</strong></th>
-                                                                    <th><strong>Metodologi - Bidang</strong></th>
-                                                                    <th><strong>Departemen</strong></th>
-                                                                    <th><strong>Aksi</strong></th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr class="">
-                                                                    <td>SS Sergio</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Inovasi & Sisman</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td>SS P-Men</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Inovasi & Sisman</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td>SS Satpam</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Keamanan</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
                         </tr>
                         <tr>
                             <td>IP (Individual Project)</td>
                             <td>7</td>
-                            <td>
-                                <button class="btn btn-success btn-tone btn-sm m-r-5" data-toggle="modal" data-target=".tambah-gugus"><i class="fas fa-plus"></i>  Pilih Gugus</button>
-                                <div class="modal fade tambah-gugus">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title h4">Pilih Gugus (Quota: 3 Gugus)</h5>
-                                                <button type="button" class="close" data-dismiss="modal">
-                                                    <i class="anticon anticon-close"></i>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <select class="select2" name="state">
-                                                            <option value="AP">Semua Departemen</option>
-                                                            <option value="NL">Nails</option>
-                                                            <option value="BN">Bananas</option>
-                                                            <option value="HL">Helicopters</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <select class="select2" name="state">
-                                                            <option value="AP">Semua Bidang</option>
-                                                            <option value="NL">Nails</option>
-                                                            <option value="BN">Bananas</option>
-                                                            <option value="HL">Helicopters</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <div class="col-lg-12">
-                                                    <div class="table-responsive">
-                                                        <table id="data-table" class="table table-bordered" style="width:100%">
-                                                            <thead>
-                                                                <tr class="">
-                                                                    <th><strong>Gugus</strong></th>
-                                                                    <th><strong>Metodologi - Bidang</strong></th>
-                                                                    <th><strong>Departemen</strong></th>
-                                                                    <th><strong>Aksi</strong></th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr class="">
-                                                                    <td>SS Sergio</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Inovasi & Sisman</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td>SS P-Men</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Inovasi & Sisman</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td>SS Satpam</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Keamanan</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
                         </tr>
                         <tr>
                             <td>5R</td>
                             <td>3</td>
-                            <td>
-                                <button class="btn btn-success btn-tone btn-sm m-r-5" data-toggle="modal" data-target=".tambah-gugus"><i class="fas fa-plus"></i>  Pilih Gugus</button>
-                                <div class="modal fade tambah-gugus">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title h4">Pilih Gugus (Quota: 3 Gugus)</h5>
-                                                <button type="button" class="close" data-dismiss="modal">
-                                                    <i class="anticon anticon-close"></i>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <select class="select2" name="state">
-                                                            <option value="AP">Semua Departemen</option>
-                                                            <option value="NL">Nails</option>
-                                                            <option value="BN">Bananas</option>
-                                                            <option value="HL">Helicopters</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <select class="select2" name="state">
-                                                            <option value="AP">Semua Bidang</option>
-                                                            <option value="NL">Nails</option>
-                                                            <option value="BN">Bananas</option>
-                                                            <option value="HL">Helicopters</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <div class="col-lg-12">
-                                                    <div class="table-responsive">
-                                                        <table id="data-table" class="table table-bordered" style="width:100%">
-                                                            <thead>
-                                                                <tr class="">
-                                                                    <th><strong>Gugus</strong></th>
-                                                                    <th><strong>Metodologi - Bidang</strong></th>
-                                                                    <th><strong>Departemen</strong></th>
-                                                                    <th><strong>Aksi</strong></th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr class="">
-                                                                    <td>SS Sergio</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Inovasi & Sisman</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td>SS P-Men</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Inovasi & Sisman</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td>SS Satpam</td>
-                                                                    <td>SS - Perkantoran</td>
-                                                                    <td>Keamanan</td>
-                                                                    <td>
-                                                                        <a class="m-b-10 m-l-10" data-toggle="modal" data-target="#delete_periode_sg">
-                                                                            <button class="btn btn-icon btn-success btn-sm btn-rounded btn-tone" data-toggle="tooltip" data-placement="bottom">
-                                                                                <i class="anticon anticon-plus"></i>
-                                                                            </button>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
                         </tr>
                         <tr>
                             <td><strong>TOTAL</strong></td>
@@ -1058,7 +257,7 @@
     <script src="assets/vendors/datatables/dataTables.bootstrap.min.js"></script>
     <script>
         $('#data-table').DataTable({
-            "scrollX": true
+            // "scrollX": true
         });
     </script>
 @endsection

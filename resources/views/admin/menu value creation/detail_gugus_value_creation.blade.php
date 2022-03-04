@@ -7,13 +7,9 @@
 @endsection
 
 @section('breadcrumb')
-    <span class="breadcrumb-item"><i class="fas fa-user-graduate"></i>   Menu Juri</span>
-    <a class="breadcrumb-item" href="/nilai-gugus">Nilai Gugus</a>
+    <span class="breadcrumb-item"><i class="fas fa-users"></i>   Menu Value Creation</span>
+    <a class="breadcrumb-item" href="/verifikasi-penghematan">Verifikasi Penghematan Gugus</a>
     <span class="breadcrumb-item" active>Detail Gugus</span>
-
-    {{-- backup
-    <a class="breadcrumb-item" href="#">Breadcrumb 1</a>
-    <span class="breadcrumb-item active">Breadcrumb 2</span> --}}
 @endsection
 
 @section('content')
@@ -545,7 +541,7 @@
         <div class="m-t-20">
             <div class="row">
                 <div class="col-md-12">
-                    <a href="/nilai-gugus">
+                    <a href="/verifikasi-penghematan">
                         <button class="btn btn-warning btn-block">Kembali</button>
                     </a>
                 </div>

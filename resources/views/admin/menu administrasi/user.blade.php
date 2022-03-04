@@ -88,9 +88,11 @@
                                             <div class="m-b-15 col-md-6">
                                                 <select class="select2" name="state">
                                                     <option value="AP">Pilih Role</option>
-                                                    <option value="NL">Nails</option>
-                                                    <option value="BN">Bananas</option>
-                                                    <option value="HL">Helicopters</option>
+                                                    <option value="NL">Fasilitator</option>
+                                                    <option value="BN">Verifikator</option>
+                                                    <option value="HL">KID</option>
+                                                    <option value="SP">SPTK</option>
+                                                    <option value="VC">Value Creation</option>
                                                 </select>
                                             </div>
                                         </div>
