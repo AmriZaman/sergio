@@ -51,9 +51,9 @@ Route::get('/profil', function () {
 //===== PROFIL END =====//
 
 //===== KLINIK INOVASI START =====//
-Route::get('/klinik-inovasi', function () {
-    return view('admin/klinik inovasi/klinik_inovasi', [
-        "title" => "Klinik Inovasi"
+Route::get('/faq', function () {
+    return view('admin/klinik inovasi/faq', [
+        "title" => "FAQ"
     ]);
 });
 //===== KLINIK INOVASI END =====//

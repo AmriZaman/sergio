@@ -15,9 +15,6 @@
                     <li class="{{ ($title === "Beranda") ? 'active' : '' }}">
                         <a href="/beranda">Beranda</a>
                     </li>
-                    <li class="{{ (($title === "Hall of Fame") or ($title === "Tambah Hall of Fame") or ($title === "Detail Hall of Fame") or ($title === "Edit Hall of Fame")) ? 'active' : '' }}">
-                        <a href="/hall-of-fame">Hall of Fame</a>
-                    </li>
                     <li class="{{ (($title === "Panduan Inovasi") or ($title === "Tambah Panduan") or ($title === "Edit Panduan")) ? 'active' : '' }}">
                         <a href="/panduan-inovasi">Panduan Inovasi</a>
                     </li>
@@ -49,9 +46,6 @@
                     <li class="{{ ($title === "Pegawai") ? 'active' : '' }}">
                         <a href="/pegawai">Daftar Pegawai</a>
                     </li>
-                    {{-- <li class="{{ ($title === "NIK") ? 'active' : '' }}">
-                        <a href="/nik">Migrasi NIK</a>
-                    </li> --}}
                 </ul>
             </li>
             <li class="nav-item dropdown">

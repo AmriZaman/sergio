@@ -84,11 +84,11 @@
                                             <i class="anticon font-size-10 anticon-right"></i>
                                         </div>
                                     </a>
-                                    <a href="/klinik-inovasi" class="dropdown-item d-block p-h-15 p-v-10">
+                                    <a href="/faq" class="dropdown-item d-block p-h-15 p-v-10">
                                         <div class="d-flex align-items-center justify-content-between">
                                             <div>
-                                                <i class="anticon opacity-04 font-size-16 anticon-customer-service"></i>
-                                                <span class="m-l-10">Klinik Inovasi</span>
+                                                <i class="anticon anticon-question"></i>
+                                                <span class="m-l-10">FAQ</span>
                                             </div>
                                             <i class="anticon font-size-10 anticon-right"></i>
                                         </div>
