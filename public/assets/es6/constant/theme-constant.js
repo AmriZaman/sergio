@@ -1,4 +1,3 @@
-
 const ThemeConstant = {
    
     magenta: '#eb2f96',

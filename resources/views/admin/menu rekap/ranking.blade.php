@@ -20,6 +20,73 @@
             <h4 class="card-title">Ranking Partisipasi Pegawai</h4>
         </div>
         <div class="card-body">
+            <div class="">
+                <h4 class="card-title">Pilih Rentang Periode Perankingan</h4>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row d-flex align-items-center">
+                        <div class="m-b-15 col-md-5">
+                            <select class="select2" name="state">
+                                <option value="AP">Pilih Periode</option>
+                                <option value="NL">Nails</option>
+                                <option value="BN">Bananas</option>
+                                <option value="HL">Helicopters</option>
+                            </select>
+                        </div>
+                        <div class="m-b-15 col-md-1" style="text-align: center">
+                            <span>s.d.</span>
+                        </div>
+                        <div class="m-b-15 col-md-6">
+                            <select class="select2" name="state">
+                                <option value="AP">Pilih Periode</option>
+                                <option value="NL">Nails</option>
+                                <option value="BN">Bananas</option>
+                                <option value="HL">Helicopters</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <label class="col-md-2 col-form-label control-label text-center">Pilih Filter Metodologi:</label>
+                        <div class="col-md-8">
+                            <div class="row m-t-5">
+                                <div class="checkbox col-md-2">
+                                    <input id="checkbox1" type="checkbox" checked="">
+                                    <label for="checkbox1">SG</label>
+                                </div>
+                                <div class="checkbox col-md-2">
+                                    <input id="checkbox2" type="checkbox" checked="">
+                                    <label for="checkbox2">SS</label>
+                                </div>
+                                <div class="checkbox col-md-2">
+                                    <input id="checkbox3" type="checkbox" checked="">
+                                    <label for="checkbox3">IP</label>
+                                </div>
+                                <div class="checkbox col-md-2">
+                                    <input id="checkbox4" type="checkbox" checked="">
+                                    <label for="checkbox4">GIO</label>
+                                </div>
+                                <div class="checkbox col-md-2">
+                                    <input id="checkbox5" type="checkbox" checked="">
+                                    <label for="checkbox5">GIM</label>
+                                </div>
+                                <div class="checkbox col-md-2">
+                                    <input id="checkbox6" type="checkbox" checked="">
+                                    <label for="checkbox6">5R</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-b-30 col-md-2" style="width: 100%">
+                            <button class="btn btn-success btn-tone m-r-5 col-md-12"><i class="fas fa-download"></i>  Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="table-responsive">
                 <table id="data-table" class="table table-bordered table-responsive" style="width: 100%">
                     <thead>
@@ -27,13 +94,13 @@
                             <th style="width: 2%"><strong>Rank</strong></th>
                             <th style="width: 12%"><strong>NIK</strong></th>
                             <th style="width: 30%"><strong>Nama</strong></th>
-                            <th style="width: 8%"><strong>VER</strong></th>
-                            <th style="width: 8%"><strong>APP</strong></th>
-                            <th style="width: 8%"><strong>SUS</strong></th>
-                            <th style="width: 8%"><strong>REV_MGR</strong></th>
-                            <th style="width: 8%"><strong>REV_FAS</strong></th>
-                            <th style="width: 8%"><strong>KRM</strong></th>
-                            <th style="width: 8%"><strong>REJECT</strong></th>
+                            <th style="width: 8%"><strong>SG</strong></th>
+                            <th style="width: 8%"><strong>SS</strong></th>
+                            <th style="width: 8%"><strong>IP</strong></th>
+                            <th style="width: 8%"><strong>GIO</strong></th>
+                            <th style="width: 8%"><strong>GIM</strong></th>
+                            <th style="width: 8%"><strong>5R</strong></th>
+                            <th style="width: 8%"><strong>TOTAL</strong></th>
                         </tr>
                     </thead>
                     <tbody>

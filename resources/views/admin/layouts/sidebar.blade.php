@@ -206,10 +206,10 @@
                         <a href="/5R">5R</a>
                     </li>
                     <li class="{{ ($title === "Ranking Sergio") ? 'active' : '' }}">
-                        <a href="/ranking-sg">Ranking Sumbang Gagasan</a>
+                        <a href="/ranking-sg">Ranking Sergio</a>
                     </li>
                     <li class="{{ ($title === "Grafik Sergio") ? 'active' : '' }}">
-                        <a href="/grafik-sg">Grafik Sumbang Gagasan</a>
+                        <a href="/grafik-sg">Grafik Sergio</a>
                     </li>
                 </ul>
             </li>
