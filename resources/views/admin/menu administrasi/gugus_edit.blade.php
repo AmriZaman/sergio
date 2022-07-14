@@ -519,155 +519,95 @@
             <textarea type="text" class="form-control" name="kondisi_awal" placeholder="Isi abstrak" rows="5"></textarea>
         </div>
         <div class="card-body">
-            <h4>Penghematan</h4>
+            <div class="d-flex align-items-center justify-content-between">
+                <h4>Penghematan</h4>
+                <button class="btn btn-success btn-tone m-r-5"><i class="fas fa-download"></i>  Download Panduan Pengisian Penghematan</button>
+            </div>
             <table>
                 <tbody>
                     <tr class="text-dark">
                         <td class="align-text-top" style="width: 15px"><p class="text-dark"><strong>1.</strong></p></td>
                         <td>
-                            <p class="text-dark"><strong>REALISASI PENGHEMATAN/PENDAPATAN</strong></p>
-                            <p class="text-dark">Merupakan jumlah pendapatan/penghematan riil yang dihasilkan oleh gugus selama proyek inovasi/kegiatan improvement (dalam hal ini adalah periode data yang dipakai gugus dalam Tahapan Check).</p>
-                            <p class="text-dark"><strong>1.1. PENGHEMATAN / PENDAPATAN</strong></p>
-                            <div class="row">
-                                <div class="col-lg-5">
-                                    <p class="text-dark">Periode data yang dipakai Gugus Selama Periode CHECK:</p>
-                                    <div class="row">
-                                        <div class="col-md-5">
-                                            <input type="text" class="form-control m-b-10" id="formGroupExampleInput" placeholder="Angka">
-                                        </div>
-                                        <div class="col-md-7">
-                                            <div class="m-b-10" style="width: 100%">
-                                                <select class="select2" name="state">
-                                                    <option value="minggu">Minggu</option>
-                                                    <option value="bulan">Bulan</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-7">
-                                    <p class="text-dark">Total Penghematan/Pendapatan Gugus Selama Periode CHECK (1.1):</p>
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text" id="inputGroup-sizing-default">Rp</span>
-                                        </div>
-                                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nilai">
-                                    </div>
-                                </div>
+                            <p class="text-dark"><strong>DIRECT FINANCIAL IMPACT</strong></p>
+                            <p class="text-dark">Value creation jenis ini  terbagi menjadi 2. <strong>"Penghematan Biaya Langsung"</strong>, yaitu realisasi biaya lebih kecil dari yang dianggarkan dan sisa anggarannya dikembalikan ke perusahaan (tidak dimanfaatkan untuk pekerjaan lainnya). <strong>"Peningkatan Pendapatan Perusahaan"</strong>, yaitu gugus memiliki impact yang bersifat financial yaitu peningkatan pendapatan perusahaan.</p>
+                            <p class="text-dark">Pilih Jenis Direct Financial Impact:</p>
+                            <div class="m-b-15" style="width: 100%">
+                                <select class="select2" name="state">
+                                    <option value="Penghematan">Penghematan Biaya Langsung</option>
+                                    <option value="Peningkatan">Peningkatan Pendapatan Perusahaan</option>
+                                </select>
                             </div>
-                            <p class="text-dark"><strong>1.2. PENGELUARAN/ BIAYA-BIAYA</strong></p>
-                            <p class="text-dark">Jenis dan jumlah Biaya yang dikeluarkan selama kegiatan Inovasi,</p>
-                            <p class="text-dark"><i>Contoh: Biaya Investasi, Biaya Perbaikan, Biaya Operasional, dsb.</i></p>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Keterangan">
-                                </div>
-                                <div class="col-lg-5">
-                                    <div class="row">
-                                        <div class="input-group mb-3 col-md-11">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text" id="inputGroup-sizing-default">Rp</span>
-                                            </div>
-                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nilai">
-                                        </div>
-                                        <button class="btn btn-icon btn-danger btn-rounded btn-tone col-md-1">
-                                            <i class="fas fa-minus"></i>
-                                        </button>
+                            <p class="text-dark"><strong>1.1. KLAIM GUGUS</strong></p>
+                            <div class="col-lg-12">
+                                <p class="text-dark">Klaim Direct Financial Impact Gugus Selama Periode CHECK:</p>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Rp</span>
                                     </div>
-                                    <div class="row">
-                                        <div class="input-group mb-3 col-md-11">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text" id="inputGroup-sizing-default">Rp</span>
-                                            </div>
-                                            <input type="text" class="form-control" id="formGroupExampleInput" value="0" disabled>
-                                        </div>
-                                        <button class="btn btn-icon btn-success btn-rounded btn-tone col-md-1">
-                                            <i class="fas fa-plus"></i>
-                                        </button>
-                                    </div>
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nilai">
                                 </div>
-                            </div>
-                            <p class="text-dark"><strong>Total Realisasi Penghematan/ Pendapatan Bersih (Pendapatan 1.1 – Biaya 1.2):</strong></p>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="inputGroup-sizing-default">Rp</span>
-                                </div>
-                                <input type="text" class="form-control" id="formGroupExampleInput" value="0" disabled>
+                                <p class="text-dark">Tulis keterangan / perhitungan yang mendasari klaim tersebut</p>
+                                <textarea type="text" class="form-control m-b-20" name="kondisi_awal" placeholder="Tulis keterangan / perhitungan yang mendasari klaim tersebut" rows="5"></textarea>
                             </div>
                         </td>
                     </tr>
                     <tr class="text-dark">
                         <td class="align-text-top" style="width: 15px"><p class="text-dark"><strong>2.</strong></p></td>
                         <td>
-                            <p class="text-dark"><strong>POTENSI PENGHEMATAN/PENDAPATAN</strong></p>
-                            <p class="text-dark">Merupakan jumlah pendapatan/penghematan potensial atau peluang pendapatan/penghematan yang dihasilkan oleh gugus selama periode yang ditetapkan oleh gugus. (misal : gugus memproyeksikan peluang pendapatan/penghematan selama 1 tahun.)</p>
-                            <p class="text-dark"><strong>2.1. POTENSI PENGHEMATAN / PENDAPATAN</strong></p>
-                            <div class="row">
-                                <div class="col-lg-5">
-                                    <p class="text-dark">Periode data yang dipakai Gugus Selama Periode CHECK:</p>
-                                    <div class="row">
-                                        <div class="col-md-5">
-                                            <input type="text" class="form-control m-b-10" id="formGroupExampleInput" placeholder="Angka">
-                                        </div>
-                                        <div class="col-md-7">
-                                            <div class="m-b-10" style="width: 100%">
-                                                <select class="select2" name="state">
-                                                    <option value="minggu">Minggu</option>
-                                                    <option value="bulan">Bulan</option>
-                                                </select>
-                                            </div>
-                                        </div>
+                            <p class="text-dark"><strong>INDIRECT FINANCIAL IMPACT</strong></p>
+                            <p class="text-dark">Gugus inovasi dengan tipe value creation ini memiliki financial impact namun tidak bisa langsung terdeteksi di neraca keuangan perusahaan. Value creation yang dihasilkan biasanya dalam bentuk penurunan nilai biaya pada periode dan struktur biaya tertentu.</p>
+                            <p class="text-dark"><strong>2.1. KLAIM GUGUS</strong></p>
+                            <div class="col-lg-12">
+                                <p class="text-dark">Klaim Indirect Financial Impact Gugus Selama Periode CHECK:</p>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Rp</span>
                                     </div>
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nilai">
                                 </div>
-                                <div class="col-lg-7">
-                                    <p class="text-dark">Total Penghematan/Pendapatan Gugus Selama Periode CHECK (2.1):</p>
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text" id="inputGroup-sizing-default">Rp</span>
-                                        </div>
-                                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nilai">
-                                    </div>
-                                </div>
+                                <p class="text-dark">Tulis keterangan / perhitungan yang mendasari klaim tersebut</p>
+                                <textarea type="text" class="form-control m-b-20" name="kondisi_awal" placeholder="Tulis keterangan / perhitungan yang mendasari klaim tersebut" rows="5"></textarea>
                             </div>
-                            <p class="text-dark"><strong>2.2. POTENSI PENGELUARAN/ BIAYA-BIAYA</strong></p>
-                            <p class="text-dark">Jenis dan jumlah Potensi Biaya yang dikeluarkan selama kegiatan Inovasi,</p>
-                            <p class="text-dark"><i>Contoh: Biaya Investasi, Biaya Perbaikan, Biaya Operasional, dsb.</i></p>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Keterangan">
-                                </div>
-                                <div class="col-lg-5">
-                                    <div class="row">
-                                        <div class="input-group mb-3 col-md-11">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text" id="inputGroup-sizing-default">Rp</span>
-                                            </div>
-                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nilai">
-                                        </div>
-                                        <button class="btn btn-icon btn-danger btn-rounded btn-tone col-md-1">
-                                            <i class="fas fa-minus"></i>
-                                        </button>
+                        </td>
+                    </tr>
+                    <tr class="text-dark">
+                        <td class="align-text-top" style="width: 15px"><p class="text-dark"><strong>3.</strong></p></td>
+                        <td>
+                            <p class="text-dark"><strong>TRANSFER OF BENEFIT</strong></p>
+                            <p class="text-dark">Gugus inovasi dengan tipe value creation ini memiliki financial impact namun diwujudkan dalam bentuk benefit program/kegiatan/pekerjaan lain</p>
+                            <p class="text-dark"><strong>3.1. KLAIM GUGUS</strong></p>
+                            <div class="col-lg-12">
+                                <p class="text-dark">Klaim Transfer of Benefit Gugus Selama Periode CHECK:</p>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Rp</span>
                                     </div>
-                                    <div class="row">
-                                        <div class="input-group mb-3 col-md-11">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text" id="inputGroup-sizing-default">Rp</span>
-                                            </div>
-                                            <input type="text" class="form-control" id="formGroupExampleInput" value="0" disabled>
-                                        </div>
-                                        <button class="btn btn-icon btn-success btn-rounded btn-tone col-md-1">
-                                            <i class="fas fa-plus"></i>
-                                        </button>
-                                    </div>
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nilai">
                                 </div>
+                                <p class="text-dark">Tulis keterangan / perhitungan yang mendasari klaim tersebut</p>
+                                <textarea type="text" class="form-control m-b-20" name="kondisi_awal" placeholder="Tulis keterangan / perhitungan yang mendasari klaim tersebut" rows="5"></textarea>
                             </div>
-                            <p class="text-dark"><strong>Total POTENSI Penghematan/ Pendapatan Bersih (Pendapatan 2.1 – Biaya 2.2):</strong></p>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="inputGroup-sizing-default">Rp</span>
-                                </div>
-                                <input type="text" class="form-control" id="formGroupExampleInput" value="0" disabled>
+                        </td>
+                    </tr>
+                    <tr class="text-dark">
+                        <td class="align-text-top" style="width: 15px"><p class="text-dark"><strong>4.</strong></p></td>
+                        <td>
+                            <p class="text-dark"><strong>INTANGIBLE IMPACT VALUE</strong></p>
+                            <p class="text-dark">Intangible Impact Value merupakan aktifitas improvement / inovasi menghasilkan impact / value creation dalam bentuk Non-Financial.</p>
+                            <p class="text-dark"><strong>4.1. DETAIL AKTIVITAS</strong></p>
+                            <p class="text-dark">Pilih Jenis Aktivitas:</p>
+                            <div class="m-b-15" style="width: 100%">
+                                <select class="select2" name="state">
+                                    <option value="SHE">SHE (safety, health and environment)</option>
+                                    <option value="CS">Corporate Secretary</option>
+                                    <option value="SC">Security</option>
+                                    <option value="Lain">Bidang-bidang Lain yang mengandung impact non tangilbe</option>
+                                </select>
                             </div>
+                            <input type="text" class="form-control m-b-15" id="formGroupExampleInput" placeholder="Form Input Ketika memilih bidang lain">
+                            <p class="text-dark">Keterangan</p>
+                            <textarea type="text" class="form-control" name="kondisi_awal" placeholder="Tulis Keterangan Intangible Impact Value" rows="5"></textarea>
+
                         </td>
                     </tr>
                 </tbody>
